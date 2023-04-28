@@ -1,0 +1,2617 @@
+<html>
+	<head>
+		<title>DIMP online</title>
+		  <script src="script.js"></script>
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+
+<body>
+
+	<div class='cabecalho topo'>
+    <div class='titulo'>
+				<h2 style="text-align:center">Manual de Orientação do Leiaute da Declaração de Informações de Meios de Pagamentos – DIMP </h2>
+		</div>
+	</div>
+
+
+	<div class='linha_superior sombra barra_nav' id='barra_superior'>
+		<div style='overflow:auto;'>
+			<div style='float:left;width:100%;overflow:hidden;height:44px'>
+				<a href='javascript:void(0);' id="botao_indice" onclick='mostra_indice()' title='Menu' style="color:black; text-decoration:none;">&#9776;   Índice</a>
+				<a href='javascript:void(0);' id="botao_arvore" class='active' onclick='mostra_arvore()'  style="color:black; text-decoration:none;"><img src="./Imagens/arvore_simbolo.png" height=18px width=auto> Árvore de Registros</a>
+
+			</div>
+		</div>
+	</div>
+
+	<div id='sub_barra'>
+		<!-- Isso aqui estbelece uma divisao pra toda a parte abaixo da barra de navegacao-->
+		<div id='menu_esq' style="display:block">
+			<!-- isso aqui cria o menu lateral, à esquerda-->
+			<div id='indice'>
+				<!-- cria a parte interna do menu a esquerda-->
+				<div id='indice_texto'>
+					<div class='arvore_registros' id='arvore_nm'>
+
+								<figure>
+							<img src="./Imagens/NiveisRegistros.png" alt="Registros DIMP" usemap="#registros" width=auto height=auto align=center;>
+							<map name="registros">
+						  	<area shape="rect" coords="1,322,90,381" alt="Registro 0000" href="javascript:void(0);" onclick='meiodatela("REGISTRO TIPO 0000: ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DA INSTITUIÇÃO DE PAGAMENTO, FINANCEIRA OU DO INTERMEDIADOR")'>
+								<area shape="rect" coords="115,195,191,253" alt="Registro 0001" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0001: ABERTURA DO BLOCO 0")'>
+<area shape="rect" coords="215,50,290,100" alt="Registro 0005" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0005: DADOS COMPLEMENTARES DO AUTOR DO ARQUIVO")'>
+<area shape="rect" coords="306,50,380,100" alt="Registro 0006" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0006: DADOS COMPLEMENTARES DO TÉCNICO RESPONSÁVEL")'>
+<area shape="rect" coords="215,111,290,160" alt="Registro 0100" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0100: TABELA DE CADASTRO DO CLIENTE")'>
+<area shape="rect" coords="306,110,380,160" alt="Registro 0105" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0105: TABELA DE VAN DO CLIENTE")'>
+<area shape="rect" coords="215,170,290,218" alt="Registro 0200" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0200: TABELA DE CADASTRO DO MEIO DE CAPTURA")'>
+<area shape="rect" coords="306,170,380,218" alt="Registro 0201" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0201: IDENTIFICAÇÃO DE TITULARES DE CONTA CONJUNTA")'>
+<area shape="rect" coords="215,230,290,278" alt="Registro 0300" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0300: DADOS DA INSTITUIÇÃO PARCEIRA")'>
+<area shape="rect" coords="215,290,290,338" alt="Registro 0600" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0600: AUTORIZAÇÃO PARA INSTITUIÇÃO PARCEIRA")'>
+<area shape="rect" coords="215,350,290,397" alt="Registro 0700" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0700: IDENTIFICAÇÃO DA INTIMAÇÃO PARA INFORMAÇÕES ESPECÍFICAS")'>
+<area shape="rect" coords="115,295,191,355" alt="Registro 0990" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 0990: ENCERRAMENTO DO BLOCO 0")'>
+<area shape="rect" coords="115,404,191,465" alt="Registro 1001" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1001: ABERTURA DO BLOCO 1")'>
+<area shape="rect" coords="215,408,290,459" alt="Registro 1100" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1100: RESUMO MENSAL DAS OPERAÇÕES DE PAGAMENTO")'>
+<area shape="rect" coords="306,408,380,460" alt="Registro 1110" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1110: OPERAÇÕES DIÁRIAS DE PAGAMENTO POR MEIO DE CAPTURA")'>
+<area shape="rect" coords="397,408,470,460" alt="Registro 1115" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1115: OPERAÇÕES POR COMPROVANTE DE TRANSAÇÃO")'>
+<area shape="rect" coords="485,408,560,460" alt="Registro 1120" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1120: INTERMEDIADOR DE SERVIÇOS E NEGÓCIOS")'>
+<area shape="rect" coords="215,469,290,520" alt="Registro 1200" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1200: CANCELAMENTO EXTEMPORÂNEO")'>
+<area shape="rect" coords="306,470,380,520" alt="Registro 1220" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1220: CANCELAMENTO TRANSAÇÃO DE INTERMEDIADOR")'>
+<area shape="rect" coords="215,530,290,580" alt="Registro 1500" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1500: RESUMO MENSAL DAS OPERAÇÕES FINANCEIRAS")'>
+<area shape="rect" coords="215,590,290,640" alt="Registro 1600" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1600: CANCELAMENTO EXTEMPORÂNEO CONSOLIDADO")'>
+<area shape="rect" coords="115,484,191,545" alt="Registro 1990" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 1990: ENCERRAMENTO DO BLOCO 1")'>
+<area shape="rect" coords="115,651,191,708" alt="Registro 9001" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 9001: ABERTURA DO BLOCO 9")'>
+<area shape="rect" coords="215,650,290,700" alt="Registro 9900" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 9900: REGISTROS DO ARQUIVO")'>
+<area shape="rect" coords="115,740,191,801" alt="Registro 9990" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 9990: ENCERRAMENTO DO BLOCO 9")'>
+<area shape="rect" coords="1,701,90,760" alt="Registro 9999" href='javascript:void(0);' onclick='meiodatela("REGISTRO TIPO 9999: ENCERRAMENTO DO ARQUIVO DIGITAL")'>
+
+							</map>
+						</figure>
+					</div>
+
+					<div class='indice_textual' id='indice_nm' style="display:none">
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("1. INFORMAÇÕES GERAIS")'>1. INFORMAÇÕES GERAIS</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("2. ESPECIFICAÇÕES TÉCNICAS DO ARQUIVO")'>2. ESPECIFICAÇÕES TÉCNICAS DO ARQUIVO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("3. BLOCOS DO ARQUIVO")'>3. BLOCOS DO ARQUIVO</a>
+						<ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("BLOCO 0 - ABERTURA E IDENTIFICAÇÃO")'>BLOCO 0 - ABERTURA E IDENTIFICAÇÃO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("BLOCO 1 – OPERAÇÕES DE PAGAMENTOS E DEMAIS TRANSAÇÕES")'>BLOCO 1 – OPERAÇÕES DE PAGAMENTOS E DEMAIS TRANSAÇÕES</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL")'>BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("Ocorrência (Oc.) de Registros")'>Ocorrência (Oc.) de Registros</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("Tipo de caractere dos Campos")'>Tipo de caractere dos Campos</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("Obrigatoriedade (OBR) dos Campos")'>Obrigatoriedade (OBR) dos Campos</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("Tabela do Código Finalidade do arquivo")'>Tabela do Código Finalidade do arquivo</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("Tabela Versão do Leiaute")'>Tabela Versão do Leiaute</a>
+					  </ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("4. LEIAUTE DA DIMP – DECLARAÇÃO DAS INFORMAÇÕES DE MEIOS DE PAGAMENTO")'>4. LEIAUTE DA DIMP – DECLARAÇÃO DAS INFORMAÇÕES DE MEIOS DE PAGAMENTO </a>
+						<ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("BLOCO 0 - ABERTURA E IDENTIFICAÇÃO")'>BLOCO 0 - ABERTURA E IDENTIFICAÇÃO</a><br>
+						<ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0000: ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DA INSTITUIÇÃO DE PAGAMENTO, FINANCEIRA OU DO INTERMEDIADOR")'>REGISTRO TIPO 0000: ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DA INSTITUIÇÃO DE PAGAMENTO, FINANCEIRA OU DO INTERMEDIADOR</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0001: ABERTURA DO BLOCO 0")'>REGISTRO TIPO 0001: ABERTURA DO BLOCO 0</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0005: DADOS COMPLEMENTARES DO AUTOR DO ARQUIVO")'>REGISTRO TIPO 0005: DADOS COMPLEMENTARES DO AUTOR DO ARQUIVO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0006: DADOS COMPLEMENTARES DO TÉCNICO RESPONSÁVEL")'>REGISTRO TIPO 0006: DADOS COMPLEMENTARES DO TÉCNICO RESPONSÁVEL</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0100: TABELA DE CADASTRO DO CLIENTE")'>REGISTRO TIPO 0100: TABELA DE CADASTRO DO CLIENTE</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0105: TABELA DE VAN DO CLIENTE")'>REGISTRO TIPO 0105: TABELA DE VAN DO CLIENTE</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0200: TABELA DE CADASTRO DO MEIO DE CAPTURA")'>REGISTRO TIPO 0200: TABELA DE CADASTRO DO MEIO DE CAPTURA</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0201: IDENTIFICAÇÃO DE TITULARES DE CONTA CONJUNTA")'>REGISTRO TIPO 0201: IDENTIFICAÇÃO DE TITULARES DE CONTA CONJUNTA</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0300: DADOS DA INSTITUIÇÃO PARCEIRA")'>REGISTRO TIPO 0300: DADOS DA INSTITUIÇÃO PARCEIRA</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0600: AUTORIZAÇÃO PARA INSTITUIÇÃO PARCEIRA")'>REGISTRO TIPO 0600: AUTORIZAÇÃO PARA INSTITUIÇÃO PARCEIRA</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0700: IDENTIFICAÇÃO DA INTIMAÇÃO PARA INFORMAÇÕES ESPECÍFICAS")'>REGISTRO TIPO 0700: IDENTIFICAÇÃO DA INTIMAÇÃO PARA INFORMAÇÕES ESPECÍFICAS</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 0990: ENCERRAMENTO DO BLOCO 0")'>REGISTRO TIPO 0990: ENCERRAMENTO DO BLOCO 0</a><br>
+					</ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("BLOCO 1 – OPERAÇÕES DE PAGAMENTOS")'>BLOCO 1 – OPERAÇÕES DE PAGAMENTOS</a><br>
+						<ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1001: ABERTURA DO BLOCO 1")'>REGISTRO TIPO 1001: ABERTURA DO BLOCO 1</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1100: RESUMO MENSAL DAS OPERAÇÕES DE PAGAMENTO")'>REGISTRO TIPO 1100: RESUMO MENSAL DAS OPERAÇÕES DE PAGAMENTO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1110: OPERAÇÕES DIÁRIAS DE PAGAMENTO POR MEIO DE CAPTURA")'>REGISTRO TIPO 1110: OPERAÇÕES DIÁRIAS DE PAGAMENTO POR MEIO DE CAPTURA</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1115: OPERAÇÕES POR COMPROVANTE DE TRANSAÇÃO")'>REGISTRO TIPO 1115: OPERAÇÕES POR COMPROVANTE DE TRANSAÇÃO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1120: INTERMEDIADOR DE SERVIÇOS E NEGÓCIOS")'>REGISTRO TIPO 1120: INTERMEDIADOR DE SERVIÇOS E NEGÓCIOS</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1200: CANCELAMENTO EXTEMPORÂNEO")'>REGISTRO TIPO 1200: CANCELAMENTO EXTEMPORÂNEO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1220: CANCELAMENTO TRANSAÇÃO DE INTERMEDIADOR")'>REGISTRO TIPO 1220: CANCELAMENTO TRANSAÇÃO DE INTERMEDIADOR</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1500: RESUMO MENSAL DAS OPERAÇÕES FINANCEIRAS")'>REGISTRO TIPO 1500: RESUMO MENSAL DAS OPERAÇÕES FINANCEIRAS</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1600: CANCELAMENTO EXTEMPORÂNEO CONSOLIDADO")'>REGISTRO TIPO 1600: CANCELAMENTO EXTEMPORÂNEO CONSOLIDADO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 1990: ENCERRAMENTO DO BLOCO 1")'>REGISTRO TIPO 1990: ENCERRAMENTO DO BLOCO 1</a><br>
+					</ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL")'>BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL</a><br>
+						<ul>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 9001: ABERTURA DO BLOCO 9")'>REGISTRO TIPO 9001: ABERTURA DO BLOCO 9</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 9900: REGISTROS DO ARQUIVO")'>REGISTRO TIPO 9900: REGISTROS DO ARQUIVO</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 9990: ENCERRAMENTO DO BLOCO 9")'>REGISTRO TIPO 9990: ENCERRAMENTO DO BLOCO 9</a><br>
+						<a href='javascript:void(0);' id="botao_meiodatela" onclick='meiodatela("REGISTRO TIPO 9999: ENCERRAMENTO DO ARQUIVO DIGITAL")'>REGISTRO TIPO 9999: ENCERRAMENTO DO ARQUIVO DIGITAL</a><br>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	<div class='corpo'>
+		<div id='principal'>
+<h1>DIMP</h1>
+<h3>Apresentação</h3>
+<p>Este manual orienta a geração do arquivo digital referente à Declaração de Informações
+de Meios de Pagamentos – DIMP prestadas por instituições financeiras e de pagamento,
+integrantes ou não do Sistema de Pagamentos Brasileiro – SPB, relativas às transações
+mercantis com cartões de débito, crédito, de loja (private label) e demais instrumentos de
+pagamento eletrônico, bem como, sobre o fornecimento de informações prestadas por
+intermediadores (agenciadores, plataformas de delivery, marketplaces e similares) de
+serviços e de negócios referentes às transações comerciais ou de prestação de serviços
+intermediadas, realizadas por pessoas jurídicas inscritas no Cadastro Nacional de Pessoa
+Jurídica – CNPJ ou pessoas físicas inscritas no Cadastro de Pessoa Física – CPF, ainda
+que não inscritas no cadastro de contribuintes do ICMS, nos termos do <a href="https://www.confaz.fazenda.gov.br/legislacao/convenios/2016/CV134_16">Convênio ICMS
+134/16.</a></p>
+<p>O manual descreve o leiaute que está organizado em blocos de informações, dispostos
+em registros, que contêm os campos específicos para o registro dos dados, bem como as
+respectivas validações e orientações específicas. </p>
+<p>Esta página não tem por objetivo substituir o <a href="https://www.confaz.fazenda.gov.br/legislacao/arquivo-manuais/a13-anexo-ii-manual-de-orientacao-dimp-v09.pdf">Manual da DIMP</a>, servindo apenas como um material de apoio e fácil consulta.</p>
+
+			<h3 id="1. INFORMAÇÕES GERAIS">1. INFORMAÇÕES GERAIS</h3>
+
+<p>As informações prestadas por instituições financeiras e de pagamento, integrantes ou não
+do Sistema de Pagamentos Brasileiro - SPB, bem como, as prestadas por intermediadores
+de serviços e de negócios, exigidas pelo <a href="https://www.confaz.fazenda.gov.br/legislacao/convenios/2016/CV134_16">Convênio ICMS 134/2016</a>, de 09/12/2016, serão
+geradas mensalmente em um arquivo único para cada Unidade da Federação, de forma
+digital, com transmissão via TED-TEF (programa que valida, gera, assina digitalmente e
+transmite o arquivo para os Fiscos Estaduais). A DIMP – Declaração de Informações de
+Meios de Pagamento corresponde ao conjunto de registros de transações de pagamento,
+financeiras, comerciais ou de prestação de serviços intermediadas, de forma padronizada.</p>
+<p>A DIMP deverá obedecer às especificações técnicas deste leiaute e terá com finalidade a
+remessa do arquivo: </p>
+<ul><ul class="disco">
+	<li><div class="negrito">Original</div></li>
+	<li><div class="negrito">Substituto</div> para retificação de informações (arquivo para substituição integral de
+informações prestadas pela Instituição referentes exclusivamente ao período objeto da
+retificação. Este arquivo sobrescreve, inclusive, as transações ajustadas
+extemporaneamente). </li>
+<li><div class="negrito">Específico</div> para cumprimento de notificação para um CPF/CNPJ referente ao período solicitado, apresentação de arquivo zerado ou de encerramento de atividades. </li>
+
+</ul></ul>
+<p><div class="negrito">BLOCOS:</div> o arquivo digital será constituído em blocos, cada qual com um registro de
+abertura, com registros de dados e com um registro de encerramento, referindo-se a cada um deles. A apresentação dos blocos deve obedecer a sequência a seguir, sendo que o
+registro de abertura do bloco indicará se haverá ou não informação. </p>
+<ul>
+<p>Blocos estruturantes: </p>
+<p>0 – Abertura, identificação e referências das Instituições; </p>
+<p>1 – Operações de pagamento e demais transações; </p>
+<p>9 – Controle e encerramento do arquivo digital. </p>
+</ul>
+<p><div class="negrito">REGISTROS: </div> O arquivo será estruturado em blocos e registros de forma sequencial e hierarquizada
+(assim definida pela citação do nível hierárquico ao qual pertence cada registro) da
+seguinte maneira: </p>
+	<img src="./Imagens/RegistrosDIMP.png" alt="Registros DIMP" class="imagem_central">
+
+
+			<h3 id="2. ESPECIFICAÇÕES TÉCNICAS DO ARQUIVO">2. ESPECIFICAÇÕES TÉCNICAS DO ARQUIVO</h3>
+
+			<p>Arquivo no formato texto, codificado em ASCII - ISO 8859-1 (Latin-1), não sendo aceitos
+campos compactados (packed decimal), zonados, binários, ponto flutuante (float point),
+etc., ou quaisquer outras codificações de texto, tais como EBCDIC;</p>
+
+<p>Os registros são sempre iniciados na primeira coluna (posição 1) e têm tamanho variável; </p>
+
+<p>A linha do arquivo digital deve conter os campos na exata ordem em que estão listados nos respectivos registros; </p>
+
+<p>Ao início do registro e ao final de cada campo deve ser inserido o caractere delimitador "|” (Pipe ou Barra Vertical: caractere 124 da Tabela ASCII); </p>
+
+<p>O caractere delimitador "|" (Pipe) não deve ser incluído como parte integrante do conteúdo de quaisquer campos numéricos ou alfanuméricos; </p>
+
+<p>Todos os registros devem conter no final de cada linha do arquivo digital, após o caractere delimitador Pipe acima mencionado, os caracteres "CR" (Carriage Return) e "LF" (Line Feed) correspondentes a "retorno do carro" e "salto de linha" (CR e LF: caracteres 13 e 10, respectivamente, da Tabela ASCII). </p>
+
+<p>Todos os campos alfanuméricos terão tamanho máximo de 255 caracteres. </p>
+
+<p>A notação de Alfanumérico, Numérico, Data e Hora devem seguir a tabela abaixo:</p>
+<br>
+<table style="border-collapse:collapse; margin-left:auto; margin-right:auto;">
+	<caption>Tabela - Formatos dos campos </caption>
+	<tr style="background-color:#A9A9A9">
+		<th>Formato</th>
+		<th>Sigla</th>
+		<th>DEC</th>
+		<th>Exemplo</th>
+		<th>Dado formatado</th>
+	</tr>
+	<tr>
+		<td>alfanumérico</td>
+		<td>X</td>
+		<td>-</td>
+		<td>|Meio de Pagamento S/A|</td>
+		<td>Meio de Pagamento S/A</td>
+	</tr>
+	<tr>
+		<td>numérico</td>
+		<td>N</td>
+		<td>-</td>
+		<td>Sem decimais<br>|12|</td>
+		<td><br>12</td>
+	</tr>
+	<tr>
+		<td>numérico com decimal</td>
+		<td>N</td>
+		<td>2</td>
+		<td>Com decimais
+			<br>|12,25|
+			<br>|1728,30|
+			<br>|1234876,00|
+		</td>
+		<td>
+			<br>12,25
+			<br>1.728,30
+			<br>1.234.876,00</td>
+	</tr>
+	<tr>
+		<td>data</td>
+		<td>N</td>
+		<td>-</td>
+		<td>Data sem barras (aaaammdd)
+			<br>|20180122|
+			<br>|20170815|
+		</td>
+		<td>
+			<br>22/01/2018
+			<br>15/08/2017
+		</td>
+	</tr>
+	<tr>
+		<td>hora</td>
+		<td>N</td>
+		<td>-</td>
+		<td>Hora sem divisores (hhmmss)
+			<br>|081027|
+			<br>|172500|
+		</td>
+		<td>
+			<br>08:10:17
+			<br>17:25:00
+		</td>
+	</tr>
+</table>
+
+<p>DEC – indica a quantidade de casas decimais admitidas no campo. </p>
+<p>OBR – indica a obrigatoriedade do preenchimento do campo. </p>
+
+			<h3 id="3. BLOCOS DO ARQUIVO">3. BLOCOS DO ARQUIVO</h3>
+
+			<p>Entre o registro inicial e o registro final, o arquivo digital é constituído de blocos, referindose cada um deles a um agrupamento de operações similares e outras informações
+correlatas.</p>
+
+			<h3 id="BLOCO 0 - ABERTURA E IDENTIFICAÇÃO">BLOCO 0 - ABERTURA E IDENTIFICAÇÃO</h3>
+			<br>
+			<table class="tabela_blocos">
+				<tr>
+					<th>Registro</th>
+					<th>Descrição</th>
+					<th>Nível</th>
+					<th>Oc.</th>
+				</tr>
+				<tr><td>0000</td><td>Abertura do Arquivo Digital e Identificação da Instituição de Pagamento, Financeira ou do Intermediador </td><td>0 </td><td>1 </td></tr>
+<tr><td>0001</td><td>Abertura do Bloco 0 </td><td>1 </td><td>1 </td></tr>
+<tr><td>0005</td><td>Dados complementares do autor do arquivo </td><td>2 </td><td>1 </td></tr>
+<tr><td>0006</td><td>Dados Complementares do Técnico Responsável </td><td>3 </td><td>1:N </td></tr>
+<tr><td>0100</td><td>Tabela de Cadastro do Cliente </td><td>2 </td><td>V </td></tr>
+<tr><td>0105</td><td>Tabela de Van do Cliente </td><td>3 </td><td>1:N </td></tr>
+<tr><td>0200</td><td>Tabela de Cadastro do Meio de Captura </td><td>2 </td><td>V </td></tr>
+<tr><td>0201</td><td>Identificação de Titulares de Conta Conjunta </td><td>3 </td><td>1:N </td></tr>
+<tr><td>0300</td><td>Dados da Instituição Parceira </td><td>2 </td><td>V </td></tr>
+<tr><td>0600</td><td>Autorização Para Instituição Parceira </td><td>2 </td><td>V </td></tr>
+<tr><td>0700</td><td>Identificação da Intimação para Informações Específicas </td><td>2 </td><td>1</td></tr>
+<tr><td>0990</td><td>Encerramento do Bloco 0 </td><td>1 </td><td>1</td></tr>
+			</table>
+<br>
+
+			<h3 id="BLOCO 1 – OPERAÇÕES DE PAGAMENTOS E DEMAIS TRANSAÇÕES">BLOCO 1 – OPERAÇÕES DE PAGAMENTOS E DEMAIS TRANSAÇÕES</h3>
+
+			<br>
+			<table class="tabela_blocos">
+				<tr>
+					<th>Registro</th>
+					<th>Descrição</th>
+					<th>Nível</th>
+					<th>Oc.</th>
+				</tr>
+			<tr><td>1001</td><td>Abertura do Bloco 1 </td><td>1 </td><td>1 </td></tr>
+<tr><td>1100</td><td>Resumo Mensal das Operações </td><td>2 </td><td>V </td></tr>
+<tr><td>1110</td><td>Operações Diárias por Meio de Captura </td><td>3 </td><td>1:N </td></tr>
+<tr><td>1115</td><td>Operações por Comprovante de transação </td><td>4 </td><td>1:N </td></tr>
+<tr><td>1120</td><td>Intermediador de Serviços e Negócios </td><td>5 </td><td>1:1 </td></tr>
+<tr><td>1200</td><td>Cancelamento Extemporâneo </td><td>2 </td><td>V </td></tr>
+<tr><td>1220</td><td>Cancelamento Transação de Intermediador </td><td>3 </td><td>1:1 </td></tr>
+<tr><td>1500</td><td>Resumo Mensal Das Operações Financeiras </td><td>2 </td><td>V </td></tr>
+<tr><td>1600</td><td>Cancelamento Extemporâneo Consolidado </td><td>2 </td><td>V </td></tr>
+<tr><td>1990</td><td>Encerramento do Bloco 1 </td><td>1 </td><td>1 </td></tr>
+</table>
+<br>
+
+			<h3 id="BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL">BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL</h3>
+
+			<br>
+			<table class="tabela_blocos">
+				<tr>
+					<th>Registro</th>
+					<th>Descrição</th>
+					<th>Nível</th>
+					<th>Oc.</th>
+				</tr>
+				<tr><td>9001 </td><td>Abertura do Bloco 9 </td><td>1 </td><td>1 </td></tr>
+<tr><td>9900 </td><td>Registros do Arquivo </td><td>2 </td><td>V </td></tr>
+<tr><td>9990 </td><td>Encerramento do Bloco 9 </td><td>1 </td><td>1 </td></tr>
+<tr><td>9999 </td><td>Encerramento do Arquivo Digital </td><td>0 </td><td>1 </td></tr>
+</table>
+
+
+			<h3 id="Ocorrência (Oc.) de Registros">Ocorrência (Oc.) de Registros</h3>
+
+			<br>
+			<table class="tabela_legenda">
+				<tr>
+					<th>Tipo</th>
+					<th>Descrição</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Registro único no arquivo. </td>
+				</tr>
+				<tr>
+					<td>V</td>
+					<td>Vários (por arquivo), corresponde a uma registro Pai que pode ocorrer mais de uma vez </td>
+				</tr>
+				<tr>
+					<td>1:1 </td>
+					<td>Um único registro Filho para o respectivo registro Pai </td>
+				</tr>
+				<tr>
+					<td>1:N</td>
+					<td>Vários registros Filhos para o respectivo registro Pai </td>
+				</tr>
+			</table>
+			<br>
+
+
+			<h3 id="Tipo de caractere dos Campos">Tipo de caractere dos Campos</h3>
+
+			<br>
+			<table class="tabela_legenda">
+				<tr>
+					<th>Tipo</th>
+					<th>Descrição</th>
+				</tr>
+				<tr>
+					<td>N</td>
+					<td>Numérico</td>
+				</tr>
+				<tr>
+					<td>X</td>
+					<td>Alfanumérico</td>
+				</tr>
+			</table>
+			<br>
+
+
+			<h3 id="Obrigatoriedade (OBR) dos Campos">Obrigatoriedade (OBR) dos Campos</h3>
+
+			<br>
+			<table class="tabela_legenda">
+				<tr>
+					<th>Tipo</th>
+					<th>Descrição</th>
+				</tr>
+				<tr>
+					<td>O</td>
+					<td>Obrigatório</td>
+				</tr>
+				<tr>
+					<td>OC</td>
+					<td>Obrigatório se existir informação a ser prestada. </td>
+				</tr>
+				<tr>
+					<td>F</td>
+					<td>Facultativo</td>
+				</tr>
+			</table>
+			<br>
+
+			<h3 id="Tabela do Código Finalidade do arquivo">Tabela do Código Finalidade do arquivo</h3>
+
+			<br>
+			<table class="tabela_legenda">
+				<tr>
+					<th>Código</th>
+					<th>Descrição da finalidade</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Normal: transações de pagamento e transferências de recursos via instituição de pagamento ou financeira e de intermediação de serviços e de negócios </td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Retificação de informações: substituição de informações do período prestadas por instituição de pagamento ou financeira e por intermediadores de serviços e de negócios </td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Cumprimento de intimação específica para um CPF/CNPJ referente ao período da fiscalização ou processo administrativo. </td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Arquivo zerado</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Arquivo Encerramento de Atividades Definitivo </td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Autorização para Instituição Parceira</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Realiza apenas operações dispensadas do envio da DIMP</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Não realiza operações na UF de destino do arquivo</td>
+				</tr>
+			</table>
+			<br>
+
+			<h3 id="Tabela Versão do Leiaute">Tabela Versão do Leiaute</h3>
+
+			<br>
+			<table class="tabela_versao">
+				<tr>
+					<th>Versão</th>
+					<th>Leiaute Instituído por</th>
+					<th>Obrigatoriedade (Início)</th>
+				</tr>
+				<tr>
+					<td>01</td>
+					<td>Ato Cotepe</td>
+					<td>01/01/2020</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>Ato Cotepe</td>
+					<td>01/01/2020</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>Ato Cotepe</td>
+					<td>01/03/2020</td>
+				</tr>
+				<tr>
+					<td>04</td>
+					<td>Ato Cotepe</td>
+					<td>01/08/2020</td>
+				</tr>
+				<tr>
+					<td>05</td>
+					<td>Ato Cotepe</td>
+					<td>01/09/2020</td>
+				</tr>
+				<tr>
+					<td>06</td>
+					<td>Ato Cotepe</td>
+					<td>01/01/2021</td>
+				</tr>
+				<tr>
+					<td>07</td>
+					<td>Ato Cotepe</td>
+					<td>01/01/2021</td>
+				</tr>
+				<tr>
+					<td>08</td>
+					<td>Ato Cotepe</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>09</td>
+					<td>Ato Cotepe</td>
+					<td>01/04/2023</td>
+				</tr>
+				<caption>* A versão 08 passou por retificações antes de sua vigência e por este motivo será integralmente substituída pela versão 09. </caption>
+			</table>
+			<br>
+
+
+
+			<h3 id="4. LEIAUTE DA DIMP – DECLARAÇÃO DAS INFORMAÇÕES DE MEIOS DE PAGAMENTO">4. LEIAUTE DA DIMP – DECLARAÇÃO DAS INFORMAÇÕES DE MEIOS DE PAGAMENTO</h3>
+			<h3 id="BLOCO 0 - ABERTURA E IDENTIFICAÇÃO">BLOCO 0 - ABERTURA E IDENTIFICAÇÃO</h3>
+			<h3 id="REGISTRO TIPO 0000: ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DA INSTITUIÇÃO DE PAGAMENTO, FINANCEIRA OU DO INTERMEDIADOR">REGISTRO TIPO 0000: ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DA INSTITUIÇÃO DE PAGAMENTO, FINANCEIRA OU DO INTERMEDIADOR</h3>
+
+			<p>Registro obrigatório e corresponde ao primeiro registro do arquivo. </p>
+			<br>
+			<table class="tabela_registro">
+				<tr>
+					<th>Nº</th>
+					<th>CAMPO</th>
+					<th>CONTEÚDO</th>
+					<th>TIPO</th>
+					<th>TAM</th>
+					<th>DEC</th>
+					<th>OBR</th>
+				</tr>
+				<tr>
+					<td>01</td>
+					<td>REG</td>
+					<td>Texto fixo contendo "0000"</td>
+					<td>N</td>
+					<td>4</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>COD_VER</td>
+					<td>Código da versão do leiaute</td>
+					<td>X</td>
+					<td>2</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>COD_FIN</td>
+					<td>Código da finalidade do arquivo
+						<br>1 – Remessa de arquivo Normal: transações de pagamento e transferências de recursos via instituição de pagamento, ou financeira e de intermediação de serviços e de negócios
+						<br>2 – Remessa de arquivo de retificação de informações: substituição de informações do período prestadas por instituição de pagamento ou financeira e por intermediadores de serviços e de negócios
+						<br>3 – Remessa de arquivo para atender intimação
+						<br>4 – Remessa de arquivo zerado
+						<br>5 – Remessa de arquivo de encerramento de atividades
+						<br>6 – Autorização para Instituição Parceira
+						<br>7 – Realiza apenas operações dispensadas do envio da DIMP
+						<br>8 – Não realiza operações na UF de destino do arquivo
+					</td>
+					<td>N</td>
+					<td>1</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>04</td>
+					<td>UF_FISCO</td>
+					<td>Sigla da Unidade da Federação do Fisco para a qual está sendo prestada a informação </td>
+					<td>X</td>
+					<td>2</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>05</td>
+					<td>CNPJ</td>
+					<td>Número de inscrição no CNPJ </td>
+					<td>N</td>
+					<td>14</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>06</td>
+					<td>NOME</td>
+					<td>Nome Empresarial (Razão Social/denominação) da instituição de pagamento, financeira ou intermediador de serviços e de negócios </td>
+					<td>X</td>
+					<td>-</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>07</td>
+					<td>DT_INI</td>
+					<td>Data do início do período referente às informações prestadas </td>
+					<td>N</td>
+					<td>8</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>08</td>
+					<td>DT_FIN</td>
+					<td>Data do fim do período referente às informações prestadas</td>
+					<td>N</td>
+					<td>8</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>09</td>
+					<td>TP_AMB</td>
+					<td>Tipo de Ambiente:<br>1 - produção;<br>2 - homologação;</td>
+					<td>N</td>
+					<td>1</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>MES_VAL</td>
+					<td>Informar ano e mês em que o arquivo foi validado (AAAAMM) </td>
+					<td>N</td>
+					<td>6</td>
+					<td>-</td>
+					<td>O</td>
+				</tr>
+			</table>
+
+			<p>Observações:
+				<br>Registro obrigatório
+				<br>Nível hierárquico - 0
+				<br>Ocorrência - um (por arquivo) </p>
+			<br>
+			<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0000]</p>
+			<p><div class="negrito">Campo 02</div> (COD_VER)<div class="negrito"> Preenchimento:</div> o código da versão do leiaute informado é
+validado conforme a data referenciada no campo DT_FIN. <div class="negrito"> Validação</div> : válido para o
+período informado. A versão do leiaute informada no arquivo deverá ser válida na data final
+da escrituração (campo DT_FIN do registro 0000). </p>
+	<p><div class="negrito">Campo 03</div> (COD_FIN)<div class="negrito"> Valores Válidos</div> : [1,2,3,4,5,6].
+		<br><br>Para a Finalidade “1 - Remessa de arquivo normal:” transações de pagamento e
+transferências de recursos via instituição de pagamento ou financeira e de intermediação
+de serviços e de negócios. Apenas os arquivos com finalidade “normal” podem conter
+registros extemporâneos.
+<br><br>Para a Finalidade “2 – Remessa de arquivo retificador” será permitido somente
+informações do período do arquivo. Nos arquivos de retificação não são aceitos registros
+1100 extemporâneos e 1200. Para corrigir as informações extemporâneas enviadas no
+arquivo normal, deve ser retificado o arquivo do mês em que ocorreram as transações ou
+corrigidas via ajustes extemporâneos em outros meses. As informações enviadas no
+arquivo com a finalidade 2 substituem as informações do período, sendo mantidas apenas
+as transações extemporâneas que foram enviadas no arquivo finalidade 1.
+<br><br>Para a Finalidade “3 – Remessa de arquivo para atender intimação”, Esta finalidade é
+usada quando o FISCO intima a instituição para informar transações de um determinado
+CPF ou CNPJ. Os arquivos com finalidade 3 podem conter informações de contas
+referenciadas nos itens “h” e “i” do rol exaustivo citado na descrição do registro 1100 ou
+1500, sendo excluídas as transações entre mesma titularidade. O arquivo com finalidade
+3 deve conter o detalhamento das transações individualizadas por operação ou a
+consolidação mensal, conforme definido na intimação. O envio do arquivo DIMP com a
+finalidade 3 não desobriga a instituição de enviar arquivo “PDF” com as informações
+solicitadas, assinado, caso seja solicitado pelo fisco. Caso a intimação seja para
+informações detalhadas, deve ser criado um registro 1100 e seus filhos para cada mês em
+que ocorreu transação, deve ser inserido o registro 1100 "vazio" (com valor zero e
+quantidade 0) para os meses que não tiverem movimento, sem a necessidade de inserir
+os seus filhos.
+<br><br>Para a Finalidade “4 – Remessa de arquivo zerado”, devem ser informados,
+obrigatoriamente, os registros 0000, 0001, 0005, 0990, 1001, 1990, 9001, 9990, 9900 e
+9999. Arquivos zerados não sobrescrevem arquivos enviados anteriormente para o mesmo
+período.
+<br><br>Para a Finalidade “5 – Remessa de arquivo de encerramento de atividades”, devem ser
+enviados apenas quando a instituição encerrar suas atividades em todo o território
+nacional. Arquivos de encerramento não sobrescrevem arquivos enviados anteriormente
+para o mesmo período e não podem conter registros de transações próprias ou de instituições parceiras.
+<br><br>Para a Finalidade “6 – Autorização para Instituição Parceira” deve ser enviada pela
+instituição cujas transações serão enviadas por outra instituição. Não é necessário o envio
+de arquivo de autorização para informar que as transações estão sendo enviadas por
+instituição pertencente ao mesmo grupo empresarial, identificado pelo mesmo CNPJ raiz.
+O arquivo de autorização deverá ser enviado a todas as unidades da federação e conterá
+as instituições que reportarão as informações em nome da instituição autorizadora. O
+emitente poderá instituir quantas parceiras autorizadas se fizerem necessárias e, a partir
+da data inicial da autorização até a data de seu cancelamento, não poderá enviar arquivos
+DIMP a nenhuma Unidade da Federação, exceto o arquivo com finalidade de
+encerramento de atividades e arquivos de movimentos anteriores à data de autorização. A
+autorização não transfere responsabilidade tributária para a instituição parceira. No arquivo
+de autorização devem ser informados, obrigatoriamente, os registros 0000, 0001, 0005,
+0600, 0990, 1001, 1990, 9001, 9990, 9900 e 9999.
+<br><br>Para a Finalidade “7” ou “8” são utilizadas para indicar que a instituição realiza apenas
+operações dispensadas de envio na DIMP, previstas na descrição do Registro 1100 e
+1500, ou não realiza operações na UF de destino do arquivo. O envio do arquivo com
+finalidades “7” ou “8” dispensa o envio de arquivos nos meses. Caso a Instituição não tenha
+operações na Unidade Federada e não envie arquivo com a Finalidade “7” ou “8”, deverá
+enviar arquivos com a finalidade “4” todos os meses.
+	</p>
+
+	<p><div class="negrito">Campo 04</div> (UF_FISCO)<div class="negrito"> Validação</div> :  deve ser informada a sigla da unidade da federação
+(UF) do Fisco o qual está sendo prestada a informação. Deve ser gerado um arquivo por
+UF. As transações recebidas por um beneficiário de pagamento estabelecido em uma UF
+só serão enviadas a outra UF caso o arquivo seja gerado com a finalidade 3 no campo 03
+do registro 0000 ou se o campo 02 do registro 1120 contiver UF diferente da informada no
+campo 09 do registro 0100 do beneficiário do pagamento.
+
+	</p>
+
+	<p><div class="negrito">Campo 05</div> (CNPJ)<div class="negrito"> Preenchimento</div> : informar o número do CNPJ da IP – Instituição de
+Pagamento. <div class="negrito">Validação </div>: serão conferidos os dígitos de verificação (DV) do CNPJ
+informado.
+
+	</p>
+
+	<p><div class="negrito">Campo 07</div> (DT_INI)<div class="negrito"> Preenchimento</div> : informar o período de validade das informações
+contidas neste registro.
+
+	</p>
+
+	<p><div class="negrito">Campo 08</div> (DT_FIN)<div class="negrito"> Preenchimento</div> : informar a última data do período de referência do
+arquivo enviado, excluindo-se quaisquer caracteres de separação. <div class="negrito"> Validação</div> : Verifica se
+a data informada neste campo é o último dia do mesmo mês/ano da data informada no
+campo DT_INI, exceto para arquivos com finalidade 3. Caso seja finalidade 3, somente
+será aceito um único CNPJ ou CPF de beneficiário de pagamento por arquivo e serão
+aceitos mais de um mês no mesmo arquivo.
+	</p>
+
+	<p><div class="negrito">Campo 09</div> (TP_AMB)<div class="negrito"> Preenchimento</div> :  informar o tipo de ambiente que o arquivo está
+sendo enviado. <div class="negrito">Valores Válidos</div> : [1,2]
+	</p>
+
+	<p><div class="negrito">Campo 10</div> (MES_VAL)<div class="negrito"> Preenchimento</div> : informar o mês em que foi concluída a geração do arquivo, que é considerada finalizada apenas após a validação do mesmo e por esse
+motivo deve ser informado neste registro o mês em que foi feita a validação.
+
+	</p>
+<br>
+			<h3 id="REGISTRO TIPO 0001: ABERTURA DO BLOCO 0">REGISTRO TIPO 0001: ABERTURA DO BLOCO 0</h3>
+
+<p>Este registro deve ser gerado para abertura do bloco 0 e indica se há informações previstas
+para este bloco. </p>
+
+<br>
+<table class="tabela_registro">
+	<tr>
+		<th>Nº</th>
+		<th>CAMPO</th>
+		<th>CONTEÚDO</th>
+		<th>TIPO</th>
+		<th>TAM</th>
+		<th>DEC</th>
+		<th>OBR</th>
+	</tr>
+	<tr>
+		<td>01</td>
+		<td>REG</td>
+		<td>Texto fixo contendo "0001" </td>
+		<td>N</td>
+		<td>4</td>
+		<td>-</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<td>02</td>
+		<td>IND_MOV</td>
+		<td>Indicador de movimento:<br>0 - Bloco sem dados informados; <br>1 - Bloco com dados informados. </td>
+		<td>N</td>
+		<td>1</td>
+		<td>-</td>
+		<td>O</td>
+	</tr>
+</table>
+<br>
+<p>Observações:
+<br>Registro obrigatório Nível hierárquico - 1
+<br>Ocorrência - um (por arquivo) </p>
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0001]</p>
+	<p><div class="negrito">Campo 02</div> (IND_MOV)<div class="negrito"> Valores Válidos</div> : [0,1]</p>
+
+<br>
+			<h3 id="REGISTRO TIPO 0005: DADOS COMPLEMENTARES DO AUTOR DO ARQUIVO">REGISTRO TIPO 0005: DADOS COMPLEMENTARES DO AUTOR DO ARQUIVO</h3>
+
+			<p>Registro obrigatório utilizado para complementar as informações de identificação do informante do arquivo. </p>
+
+			<br>
+			<table class="tabela_registro">
+				<tr>
+					<th>Nº</th>
+					<th>CAMPO</th>
+					<th>CONTEÚDO</th>
+					<th>TIPO</th>
+					<th>TAM</th>
+					<th>DEC</th>
+					<th>OBR</th>
+				</tr>
+				<tr><td>01</td><td>REG</td><td>Texto fixo contendo "0005" </td><td>N </td><td>4 </td><td>- </td><td>O </td></tr>
+	<tr><td>02</td><td>FANT</td><td>Nome Fantasia conforme informado no equipamento, site ou aplicativo </td><td>X </td><td>- </td><td>- </td><td>O </td></tr>
+	<tr><td>03</td><td>END</td><td>Endereço completo da instituição de pagamento </td><td>X </td><td>- </td><td>- </td><td>O </td></tr>
+	<tr><td>04</td><td>CEP</td><td>Código de Endereçamento Postal </td><td>N </td><td>8 </td><td>- </td><td>O </td></tr>
+	<tr><td>05</td><td>COD_MUN</td><td>Código do Município de domicílio da Instituição de Pagamento, conforme Tabela do IBGE </td><td>N </td><td>7 </td><td>- </td><td>O </td></tr>
+	<tr><td>06</td><td>UF</td><td>Sigla da Unidade da Federação em que está situada a instituição autora do arquivo </td><td>X </td><td>2 </td><td>- </td><td>O </td></tr>
+	<tr><td>07</td><td>NOME_RESP</td><td>Nome da Pessoa responsável para contato </td><td>X </td><td>- </td><td>- </td><td>O </td></tr>
+	<tr><td>08</td><td>FONE</td><td>Número de telefone para contato </td><td>N </td><td>- </td><td>- </td><td>O </td></tr>
+	<tr><td>09</td><td>EMAIL</td><td>Endereço do correio eletrônico oficial para atendimento de solicitações </td><td>X </td><td>- </td><td>- </td><td>O </td></tr>
+			</table>
+			<br>
+
+			<p>Observações:
+<br>Registro obrigatório Nível hierárquico - 2
+<br>Ocorrência - um (por arquivo) </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0005] </p>
+<p><div class="negrito">Campo 02</div> (FANT)<div class="negrito"> Preenchimento</div> : caso não possua nome de fantasia, preencher com
+parte da razão social pela qual é conhecida. </p>
+<p><div class="negrito">Campo 03</div> (END)<div class="negrito"> Preenchimento</div> :  informar o endereço completo (logradouro, número,
+complemento, bairro). </p>
+<p><div class="negrito">Campo 05</div> (COD_MUN)<div class="negrito"> Validação</div> : o código informado no campo deve existir na Tabela
+de Municípios do IBGE, possuindo 7 dígitos. </p>
+<p><div class="negrito">Campo 06</div> (UF)<div class="negrito"> Preenchimento</div> :  informar a sigla da unidade da federação (UF) da
+Instituição de Pagamento, financeira ou do intermediador de transações.</p>
+<p><div class="negrito">Campo 09</div> (E-MAIL)<div class="negrito"> Preenchimento</div> : o endereço de correio eletrônico informado neste
+campo será utilizado para eventuais solicitações das unidades da federação. </p>
+
+
+<br>
+			<h3 id="REGISTRO TIPO 0006: DADOS COMPLEMENTARES DO TÉCNICO RESPONSÁVEL">REGISTRO TIPO 0006: DADOS COMPLEMENTARES DO TÉCNICO RESPONSÁVEL</h3>
+
+<p>Registro facultativo utilizado para complementar as informações de contato dos
+responsáveis pela geração do arquivo. Caso a Instituição não pretenda informar o contato
+do técnico responsável, não é obrigatório informar este registro. Se a instituição optar por
+informar o registro, todos os campos são obrigatórios. </p>
+
+			<br>
+			<table class="tabela_registro">
+				<tr>
+					<th>Nº</th>
+					<th>CAMPO</th>
+					<th>CONTEÚDO</th>
+					<th>TIPO</th>
+					<th>TAM</th>
+					<th>DEC</th>
+					<th>OBR</th>
+				</tr>
+				<tr><td>01</td><td>REG </td><td>Texto fixo contendo "0006"</td><td>N </td><td>4 </td><td>- </td><td>O </td></tr>
+	<tr><td>02</td><td>NOME_TEC </td><td>Nome do responsável técnico para contato</td><td>X </td><td>- </td><td>- </td><td>O</td></tr>
+	<tr><td>03</td><td>FONE </td><td>Número de telefone para contato</td><td>N </td><td>- </td><td>- </td><td>O </td></tr>
+	<tr><td>04</td><td>EMAIL </td><td>Endereço do correio eletrônico oficial para atendimento de solicitações</td><td>X </td><td>- </td><td>- </td><td>O</td></tr>
+			</table>
+			<br>
+			<p>Observações:
+<br>Nível hierárquico – 3
+<br>Ocorrência – 1:N</p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0006] </p>
+<p><div class="negrito">Campo 02</div> (NOME_TEC)<div class="negrito"> Preenchimento</div> : Nome do responsável técnico caso seja
+necessário informar outro contato além do informado no registro 0005.  </p>
+<p><div class="negrito">Campo 03</div> (FONE)<div class="negrito"> Preenchimento</div> : telefone do técnico caso seja necessário informar
+outro contato além do informado no registro 0005.
+</p>
+<p><div class="negrito">Campo 05</div> (EMAIL)<div class="negrito"> Validação</div> : e-mail do técnico caso seja necessário informar outro
+contato além do informado no registro 0005.</p>
+<br>
+			<h3 id="REGISTRO TIPO 0100: TABELA DE CADASTRO DO CLIENTE">REGISTRO TIPO 0100: TABELA DE CADASTRO DO CLIENTE</h3>
+
+<p>Este registro tem por objetivo identificar os clientes do intermediador, que comercializam
+produtos ou prestam serviços, ou da Instituição de Pagamento ou Financeira, que recebem
+os pagamentos, depósitos ou transferências de recursos. Devem ser informados somente
+os clientes com informações no arquivo. O código do cliente a ser utilizado é único por
+arquivo e de livre atribuição pelo remetente do arquivo. Sugere-se guardar relação com o
+código do estabelecimento mostrado no comprovante da transação. </p>
+
+<p>Caso o cliente tenha transação destinada a UF, campo 02 do registro 1120, diferente da
+sua UF o seu registro 0100 deverá ser informado no arquivo DIMP gerado para a UF de
+destino da transação. </p>
+
+<p>Em contas conjuntas as transações deverão ser atribuídas ao CPF do primeiro titular. </p>
+
+
+
+			<br>
+			<table class="tabela_registro">
+				<tr>
+					<th>Nº</th>
+					<th>CAMPO</th>
+					<th>CONTEÚDO</th>
+					<th>TIPO</th>
+					<th>TAM</th>
+					<th>DEC</th>
+					<th>OBR</th>
+				</tr>
+				<tr><td>01</td><td>REG</td><td>Texto fixo contendo "0100" </td><td>N </td><td>4 </td><td>- </td><td>O </td></tr>
+<tr><td>02</td><td>COD_CLIENTE</td><td>Código do cliente </td><td>X </td><td>- </td><td>- </td><td>O </td></tr>
+<tr><td>03</td><td>CNPJ</td><td>CNPJ do Estabelecimento Credenciado, ou do Importador (COMEX) </td><td>N </td><td>14</td><td> -</td><td> OC </td></tr>
+<tr><td>04</td><td>CPF</td><td>CPF do Beneficiário do Pagamento ou do Importador (Comex) </td><td>N </td><td>11</td><td> -</td><td> OC </td></tr>
+<tr><td>05</td><td>N_FANT</td><td>Nome Empresarial do estabelecimento ou nome do usuário conforme comprovante da transação</td><td>X </td><td>- </td><td>- </td><td>O </td></tr>
+<tr><td>06</td><td>END</td><td>Endereço do estabelecimento ou do usuário </td><td>X </td><td>- </td><td>- </td><td>O </td></tr>
+<tr><td>07</td><td>CEP</td><td>Código de Endereço Postal do estabelecimento ou do usuário </td><td>N </td><td>8 </td><td>- </td><td>O </td></tr>
+<tr><td>08</td><td>COD_MUN</td><td>Código do município do estabelecimento ou nome do usuário, de acordo com tabela de municípios do IBGE </td><td>N </td><td>7 </td><td>- </td><td>O </td></tr>
+<tr><td>09</td><td>UF</td><td>Sigla da Unidade da Federação </td><td>X </td><td>2 </td><td>- </td><td>O </td></tr>
+<tr><td>10</td><td>NOME_RESP</td><td>Nome de contato ou responsável no estabelecimento ou do usuário </td><td>X </td><td>- </td><td>- </td><td>F </td></tr>
+<tr><td>11</td><td>FONE_CONT</td><td>Telefone do contato (DDD+FONE) </td><td>N </td><td>- </td><td>- </td><td>F </td></tr>
+<tr><td>12</td><td>EMAIL_CONT</td><td>E-mail do contato ou responsável pelo estabelecimento ou do usuário </td><td>X </td><td>- </td><td>- </td><td>F </td></tr>
+<tr><td>13</td><td>DT_CREDEN</td><td>Data do credenciamento do Beneficiário de pagamento na IP </td><td>N </td><td>8 </td><td>- </td><td>O </td></tr>
+<tr><td>14</td><td>IND_SUB</td><td>Indicador de operação de intermediação comercial e/ou de pagamentos <br>0 – Não realiza intermediação ou serviço de subadquirência para transações de terceiros <br>1 – Realiza intermediação ou serviço de subadquirência para transações de terceiros </td><td>N </td><td>1 </td><td>- </td><td>O </td></tr>
+
+			</table>
+			<br>
+<p>Observações:
+<br>Nível hierárquico – 2 Ocorrência – 1:1 </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0100] </p>
+<p><div class="negrito">Campo 02</div> (COD_CLIENTE)<div class="negrito"> Preenchimento</div> :  informar o código interno de identificação
+do cliente do intermediador ou da Instituição de Pagamento ou Financeira. Nos casos de
+beneficiário do pagamento que tenham apenas transações de VAN é obrigatório o
+preenchimento dos Registros 0100 e 0105. <div class="negrito"> Validação</div> :  o valor informado no campo COD_CLIENTE deve existir em pelo menos um registro nos demais blocos ou existir um ou mais registros 0105 hierarquicamente
+relacionados. </p>
+<p><div class="negrito">Campo 03</div> (CNPJ)<div class="negrito"> Preenchimento</div> : : informar o número do CNPJ do estabelecimento ou
+do Importador (Comex). <div class="negrito"> Validação</div> : serão conferidos os dígitos de verificação (DV) do
+CNPJ informado. Se CNPJ ficar em branco obrigatório o preenchimento do CPF. Se CNPJ
+preenchido o preenchimento do CPF é vedado.
+</p>
+<p><div class="negrito">Campo 04</div> (CPF)<div class="negrito"> Preenchimento</div> : informar o número de inscrição do beneficiário do
+pagamento ou do Importador (Comex) no cadastro do CPF. <div class="negrito"> Validação</div> : serão conferidos
+os dígitos de verificação (DV) do CPF informado. Se CPF ficar em branco obrigatório o
+preenchimento do CNPJ. Se CPF preenchido o preenchimento do CNPJ é vedado. </p>
+<p><div class="negrito">Campo 05</div> (N_FANT)<div class="negrito"> Preenchimento</div> :  informar a identificação do estabelecimento ou
+prestador de serviço que é informada no comprovante da transação. Em caso de
+intermediação de vendas e serviços, informar o nome de usuário ou identificação única do
+vendedor cadastrado junto à instituição. </p>
+<p><div class="negrito">Campo 06</div> (END)<div class="negrito"> Preenchimento</div> : informar o endereço cadastral completo do
+estabelecimento ou titular da conta (logradouro, número, complemento, bairro) registrado
+na instituição remetente do arquivo.
+</p>
+<p><div class="negrito">Campo 07</div> (CEP)<div class="negrito"> Preenchimento</div> : Código de Endereço Postal do estabelecimento ou
+do usuário. </p>
+<p><div class="negrito">Campo 08</div> (COD_MUN)<div class="negrito"> Validação</div> : o código informado no campo deve existir na Tabela
+de Municípios do IBGE, possuindo 7 dígitos. Este campo passará a ser de preenchimento
+obrigatório a partir do movimento referente ao mês <div class="negrito"> 06/2021.</div> </p>
+<p><div class="negrito">Campo 09</div> (UF)<div class="negrito"> Validação</div> :  deve ser informada a sigla da unidade da federação (UF) dos
+clientes do intermediador ou da Instituição de Pagamento ou Financeira. As transações
+realizadas em uma UF só serão enviadas a outra UF caso o arquivo seja gerado com a
+finalidade 3 no campo 03 do registro 0000 ou se o campo 2 do registro 1120 ou o campo
+02 do registro 1220 contiver UF diferente da informada neste campo.
+</p>
+<p><div class="negrito">Campo 10</div> (NOME_RESP)<div class="negrito"> Preenchimento</div> : se a informação se referir a um cliente com
+CPF, o nome do responsável deverá ficar em branco. Caso se refira a um CNPJ com mais
+de um contato, a escolha do responsável fica a critério da instituição declarante. </p>
+<p><div class="negrito">Campo 11</div> (FONE_CONT)<div class="negrito"> Preenchimento</div> : Telefone do contato (DDD+FONE).  </p>
+<p><div class="negrito">Campo 12</div> (EMAIL_CONT)<div class="negrito"> Preenchimento</div> : E-mail do contato ou responsável pelo
+estabelecimento ou do usuário.
+ </p>
+<p><div class="negrito">Campo 13</div> (DT_CREDEN)<div class="negrito"> Preenchimento</div> : : deve ser preenchida com a data do primeiro
+credenciamento ou início de relacionamento (mais antiga). </p>
+<p><div class="negrito">Campo 14</div> (IND_SUB)<div class="negrito"> Preenchimento</div> :  caso o autor do arquivo saiba que o cliente
+realiza operação de intermediação de pagamentos ou intermediação comercial
+(marketplace), deverá informar “1”. <div class="negrito"> Valores Válidos</div> : [0,1] </p></p>
+
+
+			<h3 id="REGISTRO TIPO 0105: TABELA DE VAN DO CLIENTE">REGISTRO TIPO 0105: TABELA DE VAN DO CLIENTE</h3>
+<p>Este registro tem por objetivo identificar as instituições que atuam no cliente informado no
+registro 0100 e que utilizaram a estrutura de tecnologia do declarante do arquivo (VAN)
+para captura de transações, sendo a liquidação do pagamento efetuada pelo CNPJ
+informado nesse registro. Obrigatório apenas para as instituições de pagamento que
+tenham contrato ativo para utilização do serviço. Caso a prestadora do serviço de VAN
+tenha conhecimento dos detalhes da transação, poderá enviar tais transações utilizandose do registro 0300. Este registro só deverá ser informado se existirem transações de VAN,
+neste caso todos os campos são de preenchimento obrigatório.</p>
+
+			<br>
+			<table class="tabela_registro">
+				<tr>
+					<th>Nº</th>
+					<th>CAMPO</th>
+					<th>CONTEÚDO</th>
+					<th>TIPO</th>
+					<th>TAM</th>
+					<th>DEC</th>
+					<th>OBR</th>
+				</tr>
+				<tr><td>01</td><td>REG</td><td>Texto fixo contendo "0105” </td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+<tr><td>02</td><td>CNPJ</td><td>CNPJ do utilizador do serviço de VAN </td><td>N</td><td>14</td><td>-</td><td>O </td></tr>
+<tr><td>03</td><td>NOME</td><td>Nome comercial do utilizador do serviço VAN</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+<tr><td>04</td><td>QTD</td><td>Quantidade de transações no Cliente</td><td>N</td><td>10</td><td>-</td><td>O</td></tr>
+			</table>
+			<br>
+<p>Observações:
+<br>Nível hierárquico – 3
+<br>Ocorrência – 1:N </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0105] </p>
+<p><div class="negrito">Campo 02</div> (CNPJ_VAN)<div class="negrito"> Preenchimento</div> : : informar o CNPJ da Instituição de pagamento
+VAN. <div class="negrito"> Validação</div> : serão conferidos os dígitos de verificação (DV) do CNPJ informado </p>
+<p><div class="negrito">Campo 04</div> (QTD)<div class="negrito"> Preenchimento</div> :  informar a quantidade de transações que foram
+realizadas no terminal cadastrado para o cliente. Preenchimento obrigatório a partir do
+movimento de janeiro/2023. </p>
+
+
+			<h3 id="REGISTRO TIPO 0200: TABELA DE CADASTRO DO MEIO DE CAPTURA">REGISTRO TIPO 0200: TABELA DE CADASTRO DO MEIO DE CAPTURA</h3>
+<p>Este registro tem por objetivo identificar os meios e modos de captura de pagamentos e
+transações no período ou em períodos anteriores. O código do Meio de Captura, campo
+02, a ser utilizado é único por arquivo e de livre atribuição pelo autor do arquivo, devendo
+ser utilizado no Registro 1110 e/ou no Registro 1200. As instituições de pagamento ou
+financeiras que enviam informações em nome de intermediadores devem informar no
+campo 06 o nome ou URL do intermediador. Sugere-se guardar relação com o código do
+meio de captura mostrado no comprovante da transação.</p>
+<p>As instituições financeiras que atuam por meio de uma instituição financeira centralizadora,
+com CNPJ diferente, terão suas transações enviadas pela instituição centralizadora e o
+CNPJ da instituição responsável pela conta do cliente deverá ser informado no campo
+NUM_LOG antes dos dados da agência e conta. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo "0200"</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+<tr><td>02</td><td>COD_MCAPT</td><td>Código do Meio de Captura</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+<tr><td>03</td><td>NUM_LOG</td><td>Número Lógico do Meio de Captura. </td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+<tr><td>04</td><td>TIPO_TECN</td><td>Tipo de tecnologia utilizada: <br>1 - TEF-POS INTEGRADOS; <br>2 - MOBILE; <br>3 - POS; <br>4 - E-commerce; <br>5 - Demais tecnologias; <br>6 - URA / MOTO <br>7 - Pagamento efetuado em dinheiro ou por outra estrutura <br>8 – Conta de titularidade individual <br>9 – Conta Conjunta</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+<tr><td>05</td><td>TERM_PROP </td><td>0 - terminal próprio; <br>1 - terminal de terceiro</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+<tr><td>06</td><td>MARCA</td><td>Marca indicando a Instituição de Pagamento ou Intermediador identificado no comprovante</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+						</table>
+						<br>
+<p>Observações:
+<br>Registro obrigatório
+<br>Nível hierárquico – 2
+<br>Ocorrência – 1:N</p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0200] </p>
+<p><div class="negrito">Campo 02</div> (COD_MCAPT)<div class="negrito"> Preenchimento</div> :  informar o código de identificação do Meio
+de Captura, ele é de livre atribuição da Instituição de Pagamento e intermediador e único
+por arquivo. <div class="negrito"> Validação</div> : o código informado no COD_MCAPT deve existir pelo menos em
+um registro dos demais blocos. </p>
+<p><div class="negrito">Campo 03</div> (NUM_LOG)<div class="negrito"> Preenchimento</div> : informar o número lógico do Meio de Captura
+que identifica o terminal e corresponde ao informado nos comprovantes de pagamento. <div class="negrito"> Validação</div> : Para o Tipo de Tecnologia “4 - E- commerce” do Campo 04, caso não seja
+possível identificar o meio de captura, pode ser informado “E-commerce”. Para as
+transações realizadas utilizando-se terminais de terceiros, caso não seja possível
+identificar o número lógico do terminal, pode ser informado “Terceiros”. </p>
+<p><div class="negrito">Campo 04</div> (TIPO_TECN)<div class="negrito"> Preenchimento</div> : o tipo 6 refere-se a URA - Unidade de
+Resposta Audível e MOTO (mail order / telephone order). Informar tipo 7 quando o
+pagamento ao vendedor ou prestador de serviço for realizado por dinheiro ou quando for
+efetuado por CNPJ diferente do declarante no registro 0000 ou parceiro no registro 0300.
+O tipo de tecnologia “5” deverá ser utilizado sempre que a natureza da operação não puder
+ser enquadrada nos demais tipos e a identificação da conta do usuário deve ser informada
+no campo 03 deste Registro. Caso seja indicado o Tipo de Tecnologia “8” ou “9”, o
+NUM_LOG deve ser composto pela concatenação dos seguintes dados: tipo de conta,
+número do banco, número da agência (sem dígito verificador) e número da conta (com
+dígito verificador) , conforme padronização interna do autor do arquivo e separados por
+hífen. Caso seja informado Tipo de Tecnologia “9”, deve ser gerado um registro 0201
+informando o Código do Cliente, campo 02 do Registro 0100, de cada um dos titulares.
+<br><div class="negrito"> Valores Válidos</div> : [1,2,3,4,5,6,7,8,9]. <div class="negrito"> Validação</div> : Caso seja informado tipo “7”, o campo
+TERM_PROP deve ser do tipo “1” e o campo 09 do Registro 1115 deve ser tipo “5”
+ </p>
+<p><div class="negrito">Campo 05</div> (TERM_PROP)<div class="negrito"> Preenchimento</div> :  caso a transação seja feita por meio de
+equipamento de captura de pagamentos eletrônicos utilizando-se dos serviços de VAN
+(Value Added Network), o autor do arquivo deve informar que o terminal utilizado é de
+terceiros. Caso o autor do arquivo esteja reportando transações utilizando equipamento
+“próprio”, deve informar “0”. Caso a transação esteja sendo reportada por meio “Instituição
+Parceira”, este campo deve considerar se a instituição parceira é a proprietária do meio de
+captura.
+<br><div class="negrito"> Valores Válidos</div> : [0,1]. <div class="negrito"> Validação</div> Para os Tipos de Tecnologia “4”, “8” e “9” do
+Campo 04 deve ser informado obrigatoriamente “0 - Terminal Próprio”. Para o tipo de
+tecnologia “7” do campo 04 deve ser informado “1 – Terminal de Terceiro”.
+ </p>
+<p><div class="negrito">Campo 06</div> (MARCA)<div class="negrito"> Preenchimento</div> : : informar a marca que identifica a Instituição de
+Pagamento ou intermediador indicada no comprovante da transação. Para transações
+comerciais ou de serviços, informar URL do site ou nome da plataforma onde ocorreu a
+transação. <div class="negrito"> Validação</div> : Para TERM_PROP do Campo 05 igual a “1 - terminal de terceiro”
+este campo deve ser informado obrigatoriamente.</p>
+
+
+		<h3 id="REGISTRO TIPO 0201: IDENTIFICAÇÃO DE TITULARES DE CONTA CONJUNTA">REGISTRO TIPO 0201: IDENTIFICAÇÃO DE TITULARES DE CONTA CONJUNTA</h3>
+
+<p>Registro de preenchimento obrigatório caso seja informado o tipo de tecnologia “9” no
+campo 04 do Registro 0200. Ao reportar as transações de uma conta com mais de um
+titular, o registro 1100 será vinculado apenas ao COD_CLIENTE do titular principal. </p>
+
+<br>
+<table class="tabela_registro">
+	<tr>
+		<th>Nº</th>
+		<th>CAMPO</th>
+		<th>CONTEÚDO</th>
+		<th>TIPO</th>
+		<th>TAM</th>
+		<th>DEC</th>
+		<th>OBR</th>
+	</tr>
+	<tr>
+		<td>01</td>
+		<td>REG</td>
+		<td>Texto fixo contendo "0201" </td>
+		<td>N</td>
+		<td>4</td>
+		<td>-</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<td>02</td>
+		<td>COD_CLIENTE</td>
+		<td>Identificação do Código do Cliente Informado no Registro 0100 </td>
+		<td>X</td>
+		<td>-</td>
+		<td>-</td>
+		<td>O</td>
+	</tr>
+</table>
+<br>
+
+<p>Observações:
+<br>Nível hierárquico – 3
+<br>Ocorrência – 1:N </p>
+
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0201] </p>
+<p><div class="negrito">Campo 02</div> (COD_CLIENTE)<div class="negrito"> Preenchimento</div> :   informar o código de identificação de todos
+os clientes que são titulares da conta conjunta.  </p>
+
+			<h3 id="REGISTRO TIPO 0300: DADOS DA INSTITUIÇÃO PARCEIRA">REGISTRO TIPO 0300: DADOS DA INSTITUIÇÃO PARCEIRA</h3>
+
+			<p>Este registro tem por objetivo identificar outras instituições, cujas transações de seus
+			clientes estejam sendo reportadas no arquivo. Quando o remetente do arquivo tiver acesso
+			à identificação dos beneficiários do pagamento/vendedores/prestadores de serviços
+			poderá reportar as transações da “Instituição Parceira”. Os clientes da “Instituição Parceira”
+			deverão ser declarados no Registro 0100 e suas transações deverão conter o
+			COD_IP_PAR, cadastrado no registro Campo 02 do 0300, informado no campo 02 do
+			Registro 1100. Todos os registros 0300 informados deverão ser utilizados no campo 02 do
+			registro 1100. </p>
+			<p>Para reportar as transações das instituições parceiras não deverá ser criado registro 0100
+			com os dados da instituição parceira. Deverá ser criado registro 0100 com os dados dos
+			clientes da instituição parceira e este Código do Cliente que será informado no Registro
+			1100 ou 1500.</p>
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo "0300"</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+	<tr><td>02</td><td>COD_IP_PAR</td><td>Código de identificação da Instituição Parceira </td><td>X</td><td>-</td><td>-</td><td>O</td></tr>
+	<tr><td>03</td><td>CNPJ</td><td>Número de inscrição no CNPJ </td><td>N</td><td>14</td><td>-</td><td>O </td></tr>
+	<tr><td>04</td><td>NOME</td><td>Nome Empresarial (Razão Social/denominação) da Instituição Parceira </td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>05</td><td>END</td><td>Endereço completo da Instituição Parceira </td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>06</td><td>CEP</td><td>Código de Endereçamento Postal </td><td>N</td><td>8 </td><td>- </td><td>O </td></tr>
+	<tr><td>07</td><td>COD_MUN</td><td>Código do município do estabelecimento ou do usuário, de acordo com tabela de municípios do IBGE</td><td>N</td><td>7</td><td>-</td><td>O </td></tr>
+	<tr><td>08</td><td>UF</td><td>Sigla da Unidade da Federação</td><td>X</td><td>2</td><td>-</td><td>O </td></tr>
+	<tr><td>09</td><td>NOME_RESP</td><td>Nome da Pessoa responsável para contato</td><td>X</td><td>-</td><td>-</td><td>F </td></tr>
+	<tr><td>10</td><td>FONE_CONT</td><td>Número de telefone para contato (DDD+FONE)</td><td>N</td><td>11</td><td>-</td><td>F </td></tr>
+	<tr><td>11</td><td>EMAIL_CONT</td><td>e-mail do contato para atendimento de solicitações</td><td>X</td><td>-</td><td>-</td><td>F </td></tr>
+						</table>
+						<br>
+<p>Observações:
+<br>Nível hierárquico – 2
+<br>Ocorrência – 1:N</p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0300] </p>
+<p><div class="negrito">Campo 02</div> (COD_IP_PAR)<div class="negrito"> Preenchimento</div> : informar o código de identificação da
+Instituição Parceira, ele é de livre atribuição da Instituição de pagamento, financeira ou
+intermediador. <div class="negrito"> Validação</div> : o código informado no campo COD_IP_PAR deve existir no
+registro 0100 ou 1100. </p>
+<p><div class="negrito">Campo 03</div> (CNPJ)<div class="negrito"> Preenchimento</div> :  informar o número do CNPJ do estabelecimento.
+	<div class="negrito"> Validação</div> : serão conferidos os dígitos de verificação (DV) do CNPJ informado.
+</p>
+<p><div class="negrito">Campo 05</div> (END)<div class="negrito"> Preenchimento</div> :  informar o endereço completo (logradouro, número,
+complemento, bairro)
+</p>
+<p><div class="negrito">Campo 07</div> (COD_MUN)<div class="negrito"> Preenchimento</div> : o código informado no campo deve existir na Tabela
+de Municípios do IBGE, possuindo 7 dígitos.
+</p>
+<p><div class="negrito">Campo 08</div> (UF)<div class="negrito"> Preenchimento</div> : informar a sigla da unidade da federação (UF) da
+Instituição de Pagamento, Financeira ou Intermediador ou Intermediador Parceiro.</p>
+
+
+			<h3 id="REGISTRO TIPO 0600: AUTORIZAÇÃO PARA INSTITUIÇÃO PARCEIRA">REGISTRO TIPO 0600: AUTORIZAÇÃO PARA INSTITUIÇÃO PARCEIRA</h3>
+
+		<p>	Esse registro somente poderá ser informado quando a finalidade do arquivo for do tipo “6
+			– Autorização Para Instituição Parceira” no campo 03 do registro 0000. A outorga de
+			autorização não transfere a responsabilidade pelo cumprimento de obrigações tributárias.
+			A autorização é aplicável aos casos em que uma instituição envia as transações de outra
+			utilizando-se do registro 0300 para identificar a parceira autorizadora. A partir da data da
+			emissão da autorização, a outorgante não poderá mais enviar arquivos com suas
+			transações, concedendo essa autonomia às parceiras, exceto para as transações
+			realizadas antes da data de registro da autorização. As parceiras autorizadas deverão
+			reportar todos os detalhes da transação, inclusive os que compõem o registro 1120 quando
+			for uma transação realizada via intermediador (marketplace) e os cancelamentos de
+			transações (registros 1200 e 1220). Para retificação de arquivos, as transações deverão
+			ser enviadas obedecendo as regras aplicáveis às transações enviadas por instituições
+			parceiras, sendo reportadas no arquivo de retificação total da parceira autorizada. </p>
+
+<p>			O arquivo com a finalidade autorização, e o registro de autorização, não precisam ser
+			enviados quando as transações forem reportadas por outra empresa do mesmo grupo
+			empresarial, contendo o mesmo CNPJ raiz. </p>
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01 </td><td>REG</td><td>Texto fixo contendo "0600"</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+	<tr><td>02 </td><td>TP_AUTORIZ</td><td>Tipo de registro de autorização <br>1 – Inclusão <br>2 – Exclusão</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+	<tr><td>03 </td><td>CNPJ</td><td>CNPJ da instituição autorizada</td><td>N</td><td>14</td><td>-</td><td>O </td></tr>
+	<tr><td>04 </td><td>TP_TRANSAC</td><td>Existirão transações comerciais (registros 1120) <br>0 – Não <br>1– Sim </td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+	<tr><td>05 </td><td>N_FANT</td><td>Nome fantasia da instituição autorizada</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>06 </td><td>END</td><td>Endereço da instituição autorizada</td><td>X</td><td>-</td><td>-</td><td>O</td></tr>
+	<tr><td>07 </td><td>CEP</td><td>Código de Endereço Postal da instituição autorizada</td><td>N</td><td>8</td><td>-</td><td>O </td></tr>
+	<tr><td>08 </td><td>COD_MUN</td><td>Código do município da instituição autorizada, de acordo com tabela de municípios do IBGE</td><td>N</td><td>7</td><td>-</td><td>O </td></tr>
+	<tr><td>09 </td><td>UF</td><td>Sigla da Unidade da Federação</td><td>X</td><td>2</td><td>-</td><td>O </td></tr>
+	<tr><td>10 </td><td>NOME_RESP</td><td>Nome de contato ou responsável no estabelecimento ou do usuário</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>11 </td><td>FONE_CONT</td><td>Telefone do contato (DDD+FONE)</td><td>N</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>12 </td><td>EMAIL_CONT</td><td>E-mail do contato ou responsável pelo estabelecimento ou do usuário</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>13 </td><td>DT_INI_AUT</td><td>Data de habilitação da instituição autorizada como detentora de autonomia exclusiva para envio das informações</td><td>N</td><td>8</td><td>-</td><td>O </td></tr>
+	<tr><td>14 </td><td>DT_FIM_AUT</td><td>Data de cancelamento da habilitação da instituição autorizada como detentora de autonomia exclusiva para envio das informações</td><td>N</td><td>8</td><td>-</td><td>OC </td></tr>
+						</table>
+						<br>
+<p>Observações:
+<br>Nível hierárquico – 2
+<br>Ocorrência – 1:N </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0600] </p>
+<p><div class="negrito">Campo 02</div> (TP_AUTORIZ)<div class="negrito"> Valores Válidos</div> : [1,2] </p>
+<p><div class="negrito">Campo 03</div> (CNPJ)<div class="negrito"> Preenchimento</div> :  informar o número do CNPJ do estabelecimento.
+Validação: serão conferidos os dígitos de verificação (DV) do CNPJ informado.</p>
+<p><div class="negrito">Campo 04</div> (TP_TRANSAC)<div class="negrito"> Valores Válidos</div> : [0,1] </p>
+<p><div class="negrito">Campo 06</div> (END)<div class="negrito"> Preenchimento</div> : : informar o endereço completo (logradouro, número,
+complemento, bairro)
+</p>
+<p><div class="negrito">Campo 08</div> (COD_MUN)<div class="negrito"> Validação</div> : o código informado no campo deve existir na Tabela
+de Municípios do IBGE, possuindo 7 dígitos.
+</p>
+<p><div class="negrito">Campo 09</div> (UF)<div class="negrito"> Preenchimento</div> :  informar a sigla da unidade da federação (UF) da
+Instituição de Pagamento Parceira autorizada.
+</p>
+
+
+
+			<h3 id="REGISTRO TIPO 0700: IDENTIFICAÇÃO DA INTIMAÇÃO PARA INFORMAÇÕES ESPECÍFICAS">REGISTRO TIPO 0700: IDENTIFICAÇÃO DA INTIMAÇÃO PARA INFORMAÇÕES ESPECÍFICAS</h3>
+
+<p>Este Registro deve ser informado apenas quando for selecionada a finalidade “3” no campo
+03 do Registro 0000. Se a instituição informar o registro, todos os campos são obrigatórios.
+</p>
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "0700"</td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>ID_PROC</td>
+								<td>Identificação do Processo Administrativo ou Procedimento Fiscal</td>
+								<td>X</td>
+								<td>-</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+				<p>Observações:
+<br>Nível hierárquico – 2
+<br>Ocorrência – 1:1 </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0700] </p>
+<p><div class="negrito">Campo 02</div> (ID_PROC)<div class="negrito"> Preenchimento</div> :  Informar a identificação do Processo
+Administrativo ou Procedimento Fiscal que fundamenta a intimação.
+</p>
+
+
+			<h3 id="REGISTRO TIPO 0990: ENCERRAMENTO DO BLOCO 0">REGISTRO TIPO 0990: ENCERRAMENTO DO BLOCO 0</h3>
+
+<p>Este registro tem por objetivo identificar o encerramento do bloco 0 e informar a quantidade
+de linhas existentes no bloco. </p>
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "0990"</td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>QTD_LIN_0</td>
+								<td>Quantidade total de linhas do Bloco 0 </td>
+								<td>N</td>
+								<td>-</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+		<p>Observações:
+<br>Registro obrigatório
+<br>Nível hierárquico – 1
+<br>Ocorrência – 1:1 </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [0990] </p>
+<p><div class="negrito">Campo 02</div> (QTD_LIN_ 0)<div class="negrito"> Preenchimento</div> :   a quantidade de linhas a ser informada deve
+considerar também os próprios registros de abertura e encerramento do bloco. Para este
+cálculo, o registro 0000, mesmo não pertencendo ao bloco 0, deve ser somado. <div class="negrito"> Validação</div> : o número de linhas existentes no bloco 0 é igual ao valor informado neste campo.</p>
+
+
+			<h3 id="BLOCO 1 – OPERAÇÕES DE PAGAMENTOS">BLOCO 1 – OPERAÇÕES DE PAGAMENTOS</h3>
+
+			<h3 id="REGISTRO TIPO 1001: ABERTURA DO BLOCO 1">REGISTRO TIPO 1001: ABERTURA DO BLOCO 1</h3>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "1001"</td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>IND_MOV</td>
+								<td>Indicador de movimento:
+<br>0 - Bloco sem dados informados;
+	<br>1 - Bloco com dados informados. </td>
+								<td>N</td>
+								<td>1</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+<p>Observações:
+<br>Registro obrigatório
+<br>Nível hierárquico - 1
+<br>Ocorrência - um (por arquivo) </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1001] </p>
+<p><div class="negrito">Campo 02</div> (IND_MOV) - Para arquivos com a finalidade 4 (arquivo zerado), informar 0.
+ <div class="negrito"> Valores Válidos</div> [0,1]</p>
+
+			<h3 id="REGISTRO TIPO 1100: RESUMO MENSAL DAS OPERAÇÕES DE PAGAMENTO">REGISTRO TIPO 1100: RESUMO MENSAL DAS OPERAÇÕES DE PAGAMENTO</h3>
+
+
+			<p>Este registro deve ser gerado para informar as transações mensais totalizadas por
+			COD_CLIENTE, por IP_PAR e por IND_COMEX (Indicador de transação de pagamento
+			ao exterior). Dessa forma, caso o COD_CLIENTE tenha transações nacionais e
+			internacionais, serão iniciados dois registros 1100 para ele. Caso o COD_CLIENTE tenha
+			transações reportadas em nome de uma Instituição Parceira (Campo 02 do Registro 1100)
+			e também tenha transações que não foram realizadas via Instituição Parceira, deverão ser
+			gerados registros 1100 distintos para cada caso. O registro 1100 de um COD_CLIENTE
+			deve ser seguido pelos seus respectivos registros 1110. </p>
+			<p>Este registro admite o lançamento de operações extemporâneas apenas em arquivos com
+			a finalidade do tipo 01, no campo 03 do registro 0000. Deve ser criado um registro 1100 e
+			seus filhos para cada mês em que ocorreu transação. </p>
+			<p>Caso o registro 1100 se refira a uma transação com UF de destino diferente da UF do
+			COD_CLIENTE, deverá ser informado também no arquivo DIMP da UF de destino. Em
+			arquivos com a Finalidade “3”, no campo 03 do Registro 0000, o arquivo será enviado
+			apenas para a UF que efetuou a intimação. </p>
+
+			<p><span style="text-decoration:underline">Não deverão ser reportadas </span>as transações cujo valor total mensal recebido por pessoa
+			física, seja inferior a R$ 3.375,00 ou menos que 30 transações, ou seja, somente serão
+			reportados recebimentos de pessoa física cujo montante mensal seja igual ou superior a
+			R$ 3.375,00 e tenha 30 ou mais transações. É necessário que sejam atendidos os dois critérios para que as transações sejam reportadas à Unidade da Federação em que o CPF
+estiver cadastrado. Caso a pessoa física tenha mais de um Registro 0100, deverão ser
+consideradas as transações de todos os “COD_CLIENTE” relacionados ao mesmo CPF.</p>
+
+	<p><span style="text-decoration:underline">Também não deverão ser enviadas</span>, independente de serem realizadas de forma intra ou
+interbancária ou entre contas da mesma instituição de pagamento, as seguintes
+transações e aquelas cujas finalidades podem ser a elas equiparadas:</p>
+<ol><ol type='a'>
+	<li>realizadas entre mesma titularidade ou mesmo grupo empresarial com mesma raiz de
+	CNPJ, independente de ser realizado intrabancário, interbancário ou entre contas da
+	mesma instituição de pagamento ou intermediador. Consideram-se transferências de
+	mesma titularidade aquelas que tenham exatamente os mesmos titulares, independente
+	da ordem em cada conta. Quando as transferências ocorrem entre contas de diferentes
+	instituições financeiras, estas poderão identificar a mesma titularidade mediante
+	informação declarada pelo cliente no ato de cada operação;
+	</li><li>de benefícios previdenciários e pensões destinados a pessoa física;
+	</li><li>de natureza salarial destinado a pessoa física;
+	</li><li>de benefícios sociais e provenientes de órgãos públicos destinados a pessoa física ou
+	jurídica;
+	</li><li>originadas de empréstimos e financiamentos;
+	</li><li>com liquidação via SLC/CIP para produtos crédito, débito e antecipações;
+	</li><li>Operações com natureza de câmbio registradas no BACEN.
+	</li><li>destinadas a contas cuja titularidade pertença a instituições financeiras, incluindo as
+	sociedades distribuidoras e corretoras de títulos mobiliários, agências de fomento, as
+	sociedades de seguro, de previdência e de capitalização e os fundos e clubes de
+	investimento, exceto adquirentes, subadquirentes e equiparadas, destinadas a conta-salário;
+	</li><li>destinadas a condomínios;
+	</li><li>destinadas a conta salário;
+	</li><li>relativas a pagamentos de participações de lucros, distribuição de dividendos e juros
+	sobre capital próprio conforme legislação aplicável;
+	</li><li>crédito e restituição de imposto de renda;
+	</li><li>indenizações vinculadas a ordem judicial, apólice de seguro, a título previdenciário ou
+	trabalhista;
+	</li><li>resgate, pagamento de juros, amortização e outras formas de ingresso de recursos
+	decorrentes de aplicações financeiras;
+	</li><li>cashbacks e programas de incentivo creditados pela instituição autora do arquivo;
+	</li><li>doações e patrocínios provenientes de leis de incentivo;
+	</li><li>Créditos de câmbio recebidos em contas correntes de PF e PJ, que não estejam
+	relacionados a uma operação de venda ou serviço internacional;
+	</li><li>Créditos oriundos de estornos;
+	</li><li>Depósitos em cheque ou em dinheiro.</li>
+</ol></ol>
+
+<p>Em caso de dúvida quanto ao enquadramento da transação ou quanto ao remetente do
+recurso, a transação deverá ser enviada. Os arquivos com finalidade 3 podem conter
+informações de contas referenciadas nos itens “h” e “i” do rol exaustivo citado na descrição
+deste registro, sendo excluídas as transações entre mesma titularidade. </p>
+
+<p><div class="negrito">Validação do Registro</div> : não podem ser informados dois ou mais registros com a mesma
+combinação de valores dos campos COD_IP_PAR + COD_CLIENTE + IND_COMEX +
+IND_EXTEMP + DT_INI + DT_FIN. Os valores totais informados a título de crédito e débito
+desse registro, devem corresponder ao somatório dos campos sob o mesmo título do
+registro 1110. Não serão aceitos registros cujos campos 08 e 09 tenham valores inferiores
+a R$ 3.375 e 30, respectivamente. Se apenas um dos dois campos ultrapassar os limites,
+o registro será rejeitado. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo “1100”</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+	<tr><td>02</td><td>COD_IP_PAR</td><td>Código de identificação da Instituição Parceira - (campo 02 do Registro 0300).</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+	<tr><td>03</td><td>COD_CLIENTE</td><td>Código de identificação do Cliente (campo 02 do Registro 0100)</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>04</td><td>IND_COMEX</td><td>Indicador de transação de pagamento ao exterior <br>0 – Não <br>1 – Sim</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+	<tr><td>05</td><td>IND_EXTEMP</td><td>Indicador de informação extemporânea: <br>0 – Não <br>1 – Sim</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+	<tr><td>06</td><td>DT_INI</td><td>Data Inicial das informações para este CNPJ/CPF</td><td>N</td><td>8</td><td>-</td><td>O </td></tr>
+	<tr><td>07</td><td>DT_FIN</td><td>Data Final das informações para este CNPJ/CPF</td><td>N</td><td>8</td><td>-</td><td>O </td></tr>
+	<tr><td>08</td><td>VALOR</td><td>Valor total das operações</td><td>N</td><td>18</td><td>2</td><td>O </td></tr>
+	<tr><td>09</td><td>QTD</td><td>Quantidade de operações</td><td>N</td><td>10</td><td>-</td><td>O</td></tr>
+						</table>
+						<br>
+<p>Observações:
+<br>Nível hierárquico – 2
+<br>Ocorrência – 1:N (1 por CNPJ ou CPF) </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1100] </p>
+<p><div class="negrito">Campo 02</div> (COD_IP_PAR) <div class="negrito"> Preenchimento:</div> Código de identificação da Instituição
+Parceira (aquela que compartilha as informações com o remetente do arquivo para que
+este envie as informações em seu nome). Preencher este campo apenas se o remetente
+do arquivo tiver acesso à identificação do beneficiário do pagamento. <div class="negrito"> Validação</div> : O
+COD_IP_PAR, se preenchido, deve constar no registro 0300 e o campo 06 do registro
+1110 deverá ser preenchido para informar o CNPJ responsável por efetuar o pagamento
+da transação junto ao vendedor ou prestador de serviço. Não aceitar COD_IP_PAR igual
+ao COD_CLIENTE nesse registro.
+</p>
+<p><div class="negrito">Campo 03</div> (COD_CLIENTE) <div class="negrito"> Validação:</div> o código informado no campo COD_CLIENTE
+deve ser o mesmo informado no campo 02 do Registro 0100.
+</p>
+
+<p><div class="negrito">Campo 04</div> (IND_COMEX) <div class="negrito"> Preenchimento:</div>informar se a transação se refere a
+pagamento ao exterior, em transações cross border. Não devem ser informadas as
+transações que se enquadrem no item “g” da descrição do registro 1100. <div class="negrito"> Valores Válidos</div> [0,1]
+</p>
+
+<p><div class="negrito">Campo 05</div> (IND_EXTEMP) <div class="negrito"> Preenchimento:</div> informar se a transação se refere a
+operação extemporânea. Para arquivos de retificação, finalidade 02 do campo 03 no
+registro 0000, não serão aceitos registros extemporâneos. As transações de boletos
+liquidados em períodos posteriores à data da sua emissão devem ser enviadas conforme
+o período da data da emissão do boleto. Boletos não liquidados não devem ser reportados.
+<div class="negrito"> Valores Válidos</div> [0,1]. <div class="negrito"> Validação</div> Para “Retificação do arquivo”, o IND_EXTEMP deve
+ser igual a zero.
+</p>
+
+<p><div class="negrito">Campo 06</div> (DT_INI) <div class="negrito"> Preenchimento:</div> informar a data inicial do período das informações
+contidas neste registro. Validação: DT_INI deve estar entre DT_INI e DT_FIN do Registro
+0000, exceto para IND_EXTEMP igual a “1- Sim”.
+</p>
+
+<p><div class="negrito">Campo 06</div> (DT_FIN) <div class="negrito"> Preenchimento:</div> informar a última data do período da informação.
+	<div class="negrito"> Validação</div> Verificar se a data informada neste campo pertence ao mesmo mês/ano da
+data informada no campo DT_INI do Registro 0000, exceto para IND_EXTEMP igual a “1-
+Sim” no qual o período deve ser no mês do lançamento.
+</p>
+
+<p><div class="negrito">Campo 08</div> (VALOR) <div class="negrito"> Preenchimento:</div> informar o valor total mensal das operações
+realizadas no período.
+	<div class="negrito"> Validação</div> : o valor desse campo deve corresponder ao somatório
+do campo 04 (VALOR) do Registro 1110. Será aceito valor “0” caso a finalidade do arquivo
+seja “3” e não será necessário inserir os registro 1110, 1115 e 1120 na sequência.
+</p>
+
+<p><div class="negrito">Campo 09</div> (QTD) <div class="negrito"> Preenchimento:</div>  informar a quantidade total mensal das operações
+realizadas no período.
+	<div class="negrito"> Validação</div> : o valor desse campo deve corresponder ao somatório
+do campo 05 (QTD) do Registro 1110. Será aceito valor “0” caso a finalidade do arquivo
+seja “3” e não será necessário inserir os registro 1110, 1115 e 1120 na sequência.
+
+</p>
+
+			<h3 id="REGISTRO TIPO 1110: OPERAÇÕES DIÁRIAS DE PAGAMENTO POR MEIO DE CAPTURA">REGISTRO TIPO 1110: OPERAÇÕES DIÁRIAS DE PAGAMENTO POR MEIO DE CAPTURA</h3>
+
+<p>Este registro deve ser gerado para informar as operações diárias de pagamento,
+transferências de recursos ou intermediações de compras e serviços totalizadas por: meio
+de captura, data de operação ou CNPJ do Adquirente. O registro 1110 deve ser seguido
+pelos seus respectivos 1115. Caso o COD_CLIENTE tenha mais de um CNPJ efetuando
+a liquidação das transações ao vendedor ou prestador de serviço, deve ser aberto um
+registro 1110 para cada adquirência. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo “1110”</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+	<tr><td>02</td><td>COD_MCAPT</td><td>Código do meio de captura (campo 02 do Registro 0200).</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>03</td><td>DT_OP</td><td>Data da operação</td><td>N</td><td>8</td><td>-</td><td>O </td></tr>
+	<tr><td>04</td><td>VALOR</td><td>Valor total diário das operações realizadas na data</td><td>N</td><td>18</td><td>2</td><td>O </td></tr>
+	<tr><td>05</td><td>QTD</td><td>Quantidade total diária de operações realizadas na data</td><td>N</td><td>10</td><td>-</td><td>O </td></tr>
+	<tr><td>06</td><td>CNPJ_ADQUI</td><td>CNPJ da Adquirente, subadquirente ou instituição financeira que efetuou o pagamento ao vendedor ou prestador de serviço</td><td>N</td><td>14</td><td>-</td><td>O </td></tr>
+
+						</table>
+						<br>
+
+						<p>Observações:
+<br>Nível hierárquico - 3
+<br>Ocorrência - 1:N (1 por DT_OP, COD_MCAPT e CNPJ_ADQUI) </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1110] </p>
+<p><div class="negrito">Campo 02</div> (COD_MCAPT) <div class="negrito"> Preenchimento</div>
+	: informar o código de identificação do Meio
+	de Captura. Validação: mesmo do campo 02 do Registro 0200. </p>
+<p><div class="negrito">Campo 03</div> (DT_OP) <div class="negrito"> Preenchimento</div>
+	: informar a data da operação das informações
+contidas neste registro. Validação: DT_OP deve estar entre DT_INI e DT_FIN do Registro 1100</p>
+<p><div class="negrito">Campo 04</div> (VALOR) <div class="negrito"> Preenchimento</div> :  informar o valor total diário das operações
+realizadas na data e no meio de captura referenciado.
+		 	 <div class="negrito"> Validação</div> : O valor informado neste
+registro deve ser igual ao somatório dos valores no campo 08 do Registro 1115. </p>
+<p><div class="negrito">Campo 05</div> (QTD) <div class="negrito"> Preenchimento</div> :  informar a quantidade total diária das operações
+realizadas na data. </p>
+<p><div class="negrito">Campo 06</div> (CNPJ_ADQUI) <div class="negrito"> Preenchimento</div> : CNPJ da instituição que efetuou o
+pagamento ao vendedor ou prestador de serviço, ou, responsável pela conta em que foi
+creditado o recurso. Neste campo só deve ser informado CNPJ diferente do informado no
+registro 0000 ou 0300 se o CNPJ distinto for o responsável por efetuar o liquidar a operação
+com o beneficiário do recurso. Se a instituição autora do arquivo faz a liquidação da
+operação e transfere para conta em outra instituição, deve informar o próprio CNPJ neste
+campo. Caso seja transação de transferência de recursos ou boleto, a transação deve ser
+reportada pela instituição onde o recurso foi creditado e neste campo deve ser informado
+o seu CNPJ.
+				 	 <div class="negrito"> Validação</div> : serão conferidos os dígitos de verificação (DV) do CNPJ
+informado. É vedado o preenchimento desse campo caso seja informado COD_MCAPT
+(campo 02 desse registro) correspondente ao registro 0200 que contenha no campo 04 -
+TIPO_TECN o tipo de tecnologia “7 - Pagamento efetuado em dinheiro ou por outra
+estrutura”, para os demais tipos de tecnologias o preenchimento deste campo é obrigatório.
+</p>
+
+
+
+			<h3 id="REGISTRO TIPO 1115: OPERAÇÕES POR COMPROVANTE DE TRANSAÇÃO">REGISTRO TIPO 1115: OPERAÇÕES POR COMPROVANTE DE TRANSAÇÃO</h3>
+
+			<p>Este registro deve ser gerado para informar as operações de pagamento, transferências
+			de recursos ou intermediações de compras e serviços, totalizados por comprovante ou
+			efetivação da transação. O registro 1115 deve ser seguido pelo seu respectivo 1120 caso
+			a informação se refira a uma transação informada por um intermediador de negócios e
+			serviços ou por uma instituição de pagamento que estiver enviado o arquivo em seu nome. </p>
+			<p>As transações de recepção de pagamento de títulos de terceiros com o uso de cartão de
+			crédito, débito ou pix devem ser reportadas sob a natureza “11” no campo 09 deste registro.
+			A natureza 03 somente será utilizada pela instituição financeira emitente do título, cujo
+			cedente no boleto seja seu cliente. </p>
+			<p>NSU, COD_AUT, ID_TRANSAC do registro 1115 são os campos de referência que serão
+			usados no registro 1200.</p>
+
+			<p> <div class="negrito"> Validação do Registro</div>  : não podem ser informados dois ou mais registros com a mesma
+combinação de valores dos campos: COD_CLIENTE + IND_COMEX + COD_MCAPT +
+DT_OP + (NSU ou ID_TRANSAC ou COD_AUT). Se este registro for seguido pelo registro
+1120 será admitida a duplicidade de registros 1115 com a mesma chave COD_CLIENTE
++ IND_COMEX + COD_MCAPT + DT_OP + (NSU ou ID_TRANSAC ou COD_AUT) +
+CNPJ_ADQUI. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo “1115”</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+<tr><td>02</td><td>NSU</td><td>Número Sequencial único atribuído pela adquirente</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+<tr><td>03</td><td>COD_AUT</td><td>Identificação do código de autorização atribuído pela Instituição de Pagamento</td><td>X</td><td>-</td><td>-</td><td>F </td></tr>
+<tr><td>04</td><td>ID_TRANSAC</td><td>Identificação da transação de pagamento autorizada e atribuído pela Instituição de Pagamento ou Identificador do Pedido atribuido pelo intermediador de transações (marketplace), quando diferente do NSU</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr></td></tr>
+<tr><td>05</td><td>IND_SPLIT</td><td>Indicador de operação splitada: <br>0 – não splitado <br>1 – splitado</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+<tr><td>06</td><td>BANDEIRA</td><td>Bandeira do Cartão do Cliente</td><td>N</td><td>2</td><td>-</td><td>OC </td></tr>
+<tr><td>07</td><td>HORA</td><td>Hora da transação</td><td>N</td><td>6</td><td>-</td><td>O </td></tr>
+<tr><td>08</td><td>VALOR</td><td>Valor da operação</td><td>N</td><td>18</td><td>2</td><td>O </td></tr>
+<tr><td>09</td><td>NAT_OPER</td><td>Natureza da operação <br>1 – Cartão de Crédito <br>2 – Cartão de Débito <br>3 – Boleto, guias e convênios de transações próprias, conforme data da emissão. <br>4 – Transferência de Recursos <br>5 – Pagamento efetuado em dinheiro ou por outra estrutura <br>6 – PIX (válido para arquivos enviados a partir de 11/2021) <br>7 – Voucher e cartão pré pago <br>8 – Saque ou troco em estabelecimento comercial ou operações de PIX Saque ou Pix Troco. <br>9 – EXCLUÍDO <br>10– EXCLUÍDO <br>11 – Recepção de pagamento de boletos, guias emitidos por terceiros e recargas de celular realizado por estabelecimento comercial ou prestador de serviços</td><td>N</td><td>2</td><td>-</td><td>O</td></tr>
+<tr><td>10</td><td>GEO</td><td>Georreferenciamento</td><td>X</td><td>-</td><td>-</td><td>F </td></tr>
+<tr><td>11</td><td>IND_NAT_JUR</td><td>Natureza Jurídica da Origem da Operação: <br>0 – CPF (PF) <br>1 – CNPJ (PJ</td><td>N</td><td>1</td><td>-</td><td>OC</td></tr>
+<tr><td>12</td><td>IND_TP_PIX</td><td>Indicador de tipo de PIX: <br>0 – Dinâmico <br>1 – Estático</td><td>N</td><td>1</td><td>-</td><td>OC</td></tr>
+						</table>
+						<br>
+					<p>Observações:
+<br>Nível hierárquico - 4
+<br>Ocorrência - 1:N (1 por comprovante) </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1110] </p>
+
+
+<p><div class="negrito">Campo 02</div> (NSU)
+<div class="negrito"> Preenchimento</div> : Número sequencial único atribuído pela adquirente.
+<div class="negrito"> Validação</div> : Se NSU ficar em branco obrigatório o preenchimento do ID_TRANSAC.</p>
+
+<p><div class="negrito">Campo 03</div> (COD_AUT)
+<div class="negrito"> Preenchimento</div> :  Identificação do código de autorização atribuído
+pela Instituição de Pagamento. </p>
+
+<p><div class="negrito">Campo 04</div> (ID_TRANSAC)
+<div class="negrito"> Preenchimento</div> :  Identificação da transação de pagamento,
+financeira ou comercial. Nesse campo deve ser informado o identificador do pedido, no
+caso de transações comerciais ou de prestação de serviços.
+<div class="negrito"> Validação</div> : Se ID_TRANSAC
+ficar em branco obrigatório o preenchimento do NSU. </p>
+
+<p><div class="negrito">Campo 05</div> (IND_SPLIT)
+<div class="negrito"> Preenchimento</div> : informar se a operação faz parte de uma
+operação “splitada”, se a transação for marcada como “1”, os campos 01, 02 e/ou 03
+poderão ser repetidos em Registro 1115 referente a outro CNPJ ou CPF.
+<div class="negrito"> Valores Válidos</div> : [0,1]</p>
+
+<p><div class="negrito">Campo 06</div> (BANDEIRA)
+<div class="negrito"> Preenchimento</div> : A especificação da bandeira deve estar contida
+na Relação de Bandeiras constante no Manual de Orientação ao Contribuinte do Projeto
+NF-e. Para “private label” (cartão de loja), informar 98. Para boleto e bandeiras não
+contidas na relação de bandeiras, informar 99 – outros. Para transações que não utilizem
+bandeira, deixar o registro em branco. </p>
+
+<p><div class="negrito">Campo 07</div> (HORA)
+<div class="negrito"> Preenchimento</div> : informar a hora da operação de pagamento ou da
+conclusão transação de intermediação.
+<div class="negrito"> Validação</div> : [hhmmss]</p>
+
+<p><div class="negrito">Campo 08</div> (VALOR)
+<div class="negrito"> Preenchimento</div> : informar o valor total da operação realizada. Caso
+a transação seja parcelada, deve-se informar o valor total da transação de pagamento
+considerando-se o regime de competência. Não devem ser informados os juros e encargos
+financeiros a serem pagos pelo portador à instituição financeira, caso existam.
+<div class="negrito"> Validação</div> : a soma dos valores do registro 1115 deve ser igual ao valor informado no campo 04 do
+Registro 1110.</p>
+
+<p><div class="negrito">Campo 09</div> (NAT_OPER)
+<div class="negrito"> Preenchimento</div> : informar a natureza da operação realizada.
+Transações realizadas por instituição de pagamento ou intermediadores, cuja liquidação
+com o vendedor seja processada por outra instituição de pagamento ou financeira, que
+não tenha sido informada no registro 0000 ou 0300, deverão ser reportadas com a natureza
+"5". Para a natureza “3” devem ser informados apenas os documentos cuja emissão e
+liquidação com o beneficiário do pagamento tenha sido feita pelo autor do arquivo. Boletos
+e Guias não pagos, não devem ser reportados. Se a emissão do boleto ou guia ocorreu
+em período anterior, deve ser gerado registro extemporâneo. Se o boleto/guia/convênio for
+pago via PIX, a transação deve ser reportada como PIX e marcada como PIX dinâmico.
+Para transações com criptomoedas, moedas virtuais, cashbacks e via aplicativos de
+mensagem, utilizar natureza "4". Independente da natureza da operação reportada, as
+transações devem ser informadas com seus valores em moeda nacional. As naturezas 8
+e 11 são utilizadas para informar transações de serviços financeiros realizados em
+estabelecimento comercial ou prestador de serviços. A finalidade “7” é reportada apenas
+no momento da utilização do crédito inserido no cartão. As transações com natureza “3”,
+“4”, “6” e “8” devem ser reportadas conforme a liquidação da transação. Transações
+parceladas mas com garantia de liquidação ou enquadradas na natureza “2” devem ser
+reportadas pelo seu valor total no momento da captura.
+<div class="negrito"> Valores Válidos</div> : [1,2,3,4,5,6,7,8,11]
+<div class="negrito"> Validação</div> : Caso o pagamento tenha sido efetuado em dinheiro ou por outra estrutura,
+Campo 04 do COD_MCAPT, a natureza da operação deverá ser “5”.
+</p>
+
+<p><div class="negrito">Campo 10</div> (GEO)
+<div class="negrito"> Preenchimento</div> : Antena de Celular que autorizou a operação. </p>
+
+<p><div class="negrito">Campo 11</div> (IND_NAT_JUR)
+<div class="negrito"> Preenchimento</div> : informar se a transação de pagamento foi
+realizada por pessoa física (CPF) ou pessoa jurídica (CNPJ). Obrigatório ser preenchido
+para as naturezas 4 e 6 constantes no campo 09 do Registro 1115. </p>
+
+<p><div class="negrito">Campo 12</div> (IND_TP_PIX)
+<div class="negrito"> Preenchimento</div> :  informar se a transação de pagamento foi
+realizada QR Dinâmico ou Estático. Obrigatório ser preenchido para as naturezas 6
+constantes no campo 09 do Registro 1115.
+<div class="negrito"> Validação</div> :  Caso seja informada a natureza 6
+no campo 09, este campo terá preenchimento obrigatório. Caso seja informada outra
+natureza, não deverá ser preenchido.
+</p>
+
+
+			<h3 id="REGISTRO TIPO 1120: INTERMEDIADOR DE SERVIÇOS E NEGÓCIOS">REGISTRO TIPO 1120: INTERMEDIADOR DE SERVIÇOS E NEGÓCIOS</h3>
+
+<p>Intermediador é a plataforma ou site, com CNPJ diferente do emissor de documento fiscal,
+que participe da relação de vendas de bens ou serviços, tenha a capacidade de identificar
+o comprador e disponha de meios para verificar se a transação comercial foi realizada com
+sucesso, mesmo que o pagamento tenha sido feito por outra estrutura. Se o
+acompanhamento do êxito na transação comercial ou de serviço ocorrer pelo site ou
+plataforma de intermediação, ele é considerado intermediador. Fica dispensado do envio
+da DIMP os intermediadores de vendas exclusivamente realizadas por empresas do
+mesmo grupo empresarial, com o mesmo CNPJ raiz. </p>
+
+<p>Este registro é obrigatório e exclusivo para as instituições que atuam na intermediação de
+transações comerciais e de serviços. Visa identificar a ocorrência de transações com a
+intermediação de terceiros. Nos arquivos gerados por instituições de pagamento em nome
+dos Intermediadores de Serviços e Negócios, as transações das instituições parceiras são
+agrupadas conforme o campo 02 do registro 1100 (COD_IP_PAR). </p>
+
+
+<p>Caso a UF de destino da transação seja diferente da informada no campo 09 do registro
+0100, os registros 0100, 0200, 1100, 1110, 1115 e 1120 referentes a esta transação
+deverão ser informados também no arquivo DIMP da UF de destino correspondente.
+Se a operação comercial envolver prestação de serviços, poderão ser preenchidos os
+campos 03 e 07 deste registro. </p>
+<p><div class="negrito">Validação do Registro</div> : Caso esse registro seja informado, deve ser preenchido o Campo
+06 do Registro 1110 com o CNPJ da instituição que efetuou o pagamento. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo "1120"</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+<tr><td>02</td><td>UF_DEST</td><td>Informar a UF para qual foi destinada a transação comercial ou de prestação de serviço</td><td>X</td><td>2</td><td>-</td><td>O </td></tr>
+<tr><td>03</td><td>CHAVE_NF</td><td>Informar a chave da NFe ou NFCe</td><td>N</td><td>44</td><td>-</td><td>F </td></tr>
+<tr><td>04</td><td>CNPJ_DEST</td><td>CNPJ do destinatário da transação</td><td>N</td><td>14</td><td>-</td><td>OC </td></tr>
+<tr><td>05</td><td>CPF_DEST</td><td>CPF do destinatário da transação</td><td>N</td><td>11</td><td>-</td><td>OC </td></tr>
+<tr><td>06</td><td>ID_DEST</td><td>Identificação de destinatários sem cadastro de CPF ou CNPJ</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+<tr><td>07</td><td>CHAVE_NFSE</td><td>Informar a chave da NFS-e</td><td>N</td><td>44</td><td>-</td><td>F </td></tr>
+<tr><td>08</td><td>CHAVE_DCE</td><td>Informar a chave da DC-e</td><td>N</td><td>44</td><td>-</td><td>F </td></tr>
+<tr><td>09</td><td>UF_ORIGEM</td><td>Informar a UF onde ocorreu a saída física da mercadoria ao destinatário ou início da prestação do serviço</td><td>X</td><td>2</td><td>-</td><td>OC </td></tr>
+<tr><td>10</td><td>CNPJ_ORIGEM</td><td>Informar o CNPJ que promoveu a saída física da mercadoria ao destinatário ou início da prestação do serviço</td><td>X</td><td>14</td><td>-</td><td>OC </td></tr>
+<tr><td>11</td><td>ID_PEDIDO</td><td>Informar o identificador do pedido gerado no Intermediador da transação comercial ou serviço</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+						</table>
+						<br>
+<p>Observações:
+<br>Registro exclusivo e obrigatório para instituições que atuam na intermediação de negócios e serviços.
+<br>Nível hierárquico - 5
+<br>Ocorrência – 1:N </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1110] </p>
+
+
+<p><div class="negrito">Campo 02</div> (UF_DEST)
+	<div class="negrito"> Preenchimento</div> : Informar a UF de destino da transação comercial.
+
+</p>
+
+<p><div class="negrito">Campo 03</div> (CHAVE_NF)
+	<div class="negrito"> Preenchimento</div> :Quando o intermediador tiver acesso às
+informações da NFe ou NFCe, preencher neste campo com a chave de acesso do
+documento eletrônico. A Nota Fiscal de Serviço não deverá ser reportada.
+	<div class="negrito"> Validação</div> : é
+conferido se o dígito verificador (DV) da chave é válido. Conforme o Manual de Orientações
+do Contribuinte v 6.00, página 143.
+</p>
+
+<p><div class="negrito">Campo 04</div> (CNPJ_DEST)
+	<div class="negrito"> Preenchimento</div> : Informar o CNPJ do comprador ou
+contratante dos serviços intermediados.
+	<div class="negrito"> Validação</div> : serão conferidos os dígitos de
+verificação (DV) do CNPJ informado. Se CNPJ ficar em branco obrigatório o
+preenchimento do CPF_DEST ou ID_DEST. Se CNPJ for preenchido o preenchimento dos
+outros campos é vedado.
+</p>
+
+<p><div class="negrito">Campo 05</div> (CNPJ_DEST)
+	<div class="negrito"> Preenchimento</div> :  Informar o CPF do comprador ou contratante
+dos serviços intermediados.
+	<div class="negrito"> Validação</div> : serão conferidos os dígitos de verificação (DV) do
+CPF informado. Se CPF ficar em branco obrigatório o preenchimento do CNPJ_DEST ou
+ID_DEST. Se CPF for preenchido o preenchimento dos outros campos é vedado.
+
+</p>
+
+<p><div class="negrito">Campo 06</div> (ID_DEST)
+	<div class="negrito"> Preenchimento</div> :  Informar a identificação do comprador ou
+contratante dos serviços intermediados. Preencher este campo apenas nos casos de
+destinatários sem cadastro de CPF ou CNPJ.
+	<div class="negrito"> Validação</div> : Se ID_DEST ficar em branco obrigatório o preenchimento do CNPJ_DEST ou CPF_DEST. Se ID_DEST for preenchido
+o preenchimento dos outros campos é vedado.
+</p>
+
+<p><div class="negrito">Campo 07</div> (CHAVE_NFSE)
+	<div class="negrito"> Preenchimento</div> : Quando o intermediador tiver acesso às
+informações da NFSE, preencher neste campo com a chave de acesso do documento
+eletrônico.
+	<div class="negrito"> Validação</div> : é conferido se o dígito verificador (DV) da chave é válido. Conforme
+o Manual de Orientações do Contribuinte v 6.00, página 143.
+</p>
+
+<p><div class="negrito">Campo 08</div> (CHAVE_DCE)
+	<div class="negrito"> Preenchimento</div> :  Quando o intermediador tiver acesso às
+informações da DCE - Declaração de Contéudo Eletrônica, preencher neste campo com a
+chave de acesso do documento eletrônico. A Nota Fiscal de Serviço não deverá ser
+reportada.
+	<div class="negrito"> Validação</div> : é conferido se o dígito verificador (DV) da chave é válido. Conforme
+o Manual de Orientações do Contribuinte v 6.00, página 143.
+</p>
+
+<p><div class="negrito">Campo 09</div> (UF_ORIGEM)
+	<div class="negrito"> Preenchimento</div> : quando o intermediador da transação tiver
+conhecimento da UF de origem da circulação da mercadoria, deverá preencher este
+campo.
+</p>
+
+<p><div class="negrito">Campo 10</div> (CNPJ_ORIGEM)
+	<div class="negrito"> Preenchimento</div> : quando o intermediador da transação tiver
+conhecimento do CNPJ responsável pelo envio da mercadoria, deverá preencher este
+campo.
+	<div class="negrito"> Validação</div> : serão conferidos os dígitos de verificação (DV) do CNPJ informado.
+</p>
+
+<p><div class="negrito">Campo 11</div> (ID_PEDIDO)
+	<div class="negrito"> Preenchimento</div> : Informar o código do pedido gerado pelo
+intermediador.
+</p>
+
+			<h3 id="REGISTRO TIPO 1200: CANCELAMENTO EXTEMPORÂNEO">REGISTRO TIPO 1200: CANCELAMENTO EXTEMPORÂNEO</h3>
+
+			<p>Este registro deve ser gerado para informar as operações de períodos anteriores que foram
+			canceladas no mês atual. Caso uma transação tenha sido cancelada/estornada no mesmo
+			período (mês) em que foi realizada, não deverá ser enviada. Registros de cancelamento
+			extemporâneo são aceitos apenas em arquivos com finalidade 01 – Normal, campo 03 do
+			registro 0000. </p>
+
+			<p>Se a transação original contiver informações relacionadas ao comprador em outra UF, a
+			transação cancelada, registros 0100, 0200, 1200 e 1220, também deverá ser enviada para
+			a UF do comprador. </p>
+
+			<p>Utiliza-se o registro 1200 apenas para cancelar transações que foram enviadas via registro
+			1115. <p>
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo “1200”</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+	<tr><td>02</td><td>COD_IP_PAR</td><td>Código de identificação da Instituição Parceira - (campo 02 do Registro 0300).</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+	<tr><td>03</td><td>COD_CLIENTE</td><td>Código do cliente (campo 02 do registro 0100)</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>04</td><td>COD_MCAPT</td><td>Código do Meio de Captura</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+	<tr><td>05</td><td>NSU</td><td>Número Sequencial único atribuído pela adquirente da transação original</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+	<tr><td>06</td><td>COD_AUT</td><td>Identificação do código de autorização atribuído à transação original</td><td>X</td><td>-</td><td>-</td><td>F </td></tr>
+	<tr><td>07</td><td>ID_TRANSAC</td><td>Identificação da transação original, quando diferente do NSU</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+	<tr><td>08</td><td>DT_OP</td><td>Data da transação original</td><td>N</td><td>8</td><td>-</td><td>O </td></tr>
+	<tr><td>09</td><td>DT_CANC</td><td>Data do cancelamento</td><td>N</td><td>8</td><td>-</td><td>O </td></tr>
+	<tr><td>10</td><td>TIPO_CANC</td><td>Tipo do cancelamento: <br>0 - chargeback <br>1 - cancelamento operacional <br>2 - correção de lançamento</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+	<tr><td>11</td><td>VL_ORIG</td><td>Valor original (total) da operação a ser cancelada.</td><td>N</td><td>18</td><td>2</td><td>O </td></tr>
+	<tr><td>12</td><td>VL_CANC</td><td>Valor cancelado da respectiva operação</td><td>N</td><td>18</td><td>2</td><td>O</td></tr>
+						</table>
+						<br>
+					<p>Observações:
+<br>Nível hierárquico – 2
+<br>Ocorrência – 1:N (1 por cancelamento) </p>
+
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1200] </p>
+
+
+<p><div class="negrito">Campo 02</div> (COD_IP_PAR)
+	<div class="negrito"> Preenchimento</div> : Código de identificação da Instituição
+Parceira, se houver a parceria.
+	<div class="negrito"> Validação</div> :  informar o mesmo código cadastrado no campo
+02 do registro 0300. Deixar em branco, não existindo nenhuma IP parceira.
+
+</p>
+
+<p><div class="negrito">Campo 03</div> (COD_CLIENTE)
+	<div class="negrito"> Validação</div> : o código informado no campo COD_CLIENTE
+deve ser o mesmo informado no campo 02 do Registro 0100.
+
+</p>
+
+<p><div class="negrito">Campo 04</div> (COD_MCAPT)
+	<div class="negrito"> Preenchimento</div> : informar o código de identificação do Meio
+de Captura.
+	<div class="negrito"> Validação</div> :  mesmo do campo 02 do Registro 0200.
+</p>
+
+<p><div class="negrito">Campo 05</div> (NSU)
+	<div class="negrito"> Preenchimento</div> : Número sequencial único atribuído pela adquirente à
+transação original.
+	<div class="negrito"> Validação</div> : Se NSU ficar em branco obrigatório o preenchimento do
+ID_TRANSAC.
+</p>
+
+<p><div class="negrito">Campo 06</div> (COD_AUT)
+	<div class="negrito"> Preenchimento</div> : Identificação do código de autorização,
+atribuído a transação original.
+</p>
+
+<p><div class="negrito">Campo 07</div> (ID_TRANSAC)
+	<div class="negrito"> Preenchimento</div> :  Identificação da transação original, quando
+diferente do NSU.
+	<div class="negrito"> Validação</div> : Se ID_TRANSAC ficar em branco obrigatório o
+preenchimento do NSU.
+</p>
+
+<p><div class="negrito">Campo 08</div> (DT_OP)
+	<div class="negrito"> Preenchimento</div> :  Informar a data da transação original
+	<div class="negrito"> Validação</div> : DT_OP deve estar antes da DT_INI do Registro 0000.
+</p>
+
+
+
+<p><div class="negrito">Campo 09 </div> (DT_CANC)
+	<div class="negrito"> Preenchimento</div> : Informar a data do cancelamento da transação.
+	<div class="negrito"> Validação</div> :  DT_CANC deve estar entre DT_INI e DT_FIN do Registro 0000.
+</p>
+
+<p><div class="negrito">Campo 10</div> (TIPO_CANC)
+	<div class="negrito"> Preenchimento</div> : Informar tipo 0 - chargeback: quando a
+operação não for cancelamento operacional ou correção de lançamento; 1 - cancelamento
+operacional: quando a transação é cancelada pelo estabelecimento, por erro ou devolução
+simples; 2 – correção de lançamento: quando a operação não foi registrada corretamente
+no momento em que ocorreu, sendo necessário o cancelamento da transação original para
+registro de nova transação.
+	<div class="negrito"> Valores Válidos</div> : [0,1,2]
+</p>
+
+<p><div class="negrito">Campo 11</div> (VL_ORIG)
+	<div class="negrito"> Preenchimento</div> : informar o valor total da operação original que
+sofreu o cancelamento. Caso ocorram mais de um cancelamento para a mesma transação
+original, sempre será informado o valor original da primeira transação, sem considerar os
+cancelamentos que ocorreram.
+</p>
+
+<p><div class="negrito">Campo 12</div> (VL_CANC)
+	<div class="negrito"> Preenchimento</div> : informar o valor cancelado da operação.
+	<div class="negrito"> Validação</div> : O valor cancelado deve ser igual ou inferior ao valor original.
+</p>
+
+
+
+
+			<h3 id="REGISTRO TIPO 1220: CANCELAMENTO TRANSAÇÃO DE INTERMEDIADOR">REGISTRO TIPO 1220: CANCELAMENTO TRANSAÇÃO DE INTERMEDIADOR</h3>
+
+<p>Este registro deve ser gerado para informar os cancelamentos das transações realizadas
+por meio de intermediadores de serviços e negócios. Caso a transação cancelada tenha
+sido destinada a outra UF, os registro 0100, 1200 e 1220 deverão ser enviados também à
+UF correspondente. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo "1220"</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+	<tr><td>02</td><td>UF_DEST</td><td>Informar a UF para qual foi destinada a transação comercial ou de prestação de serviço</td><td>X</td><td>2</td><td>-</td><td>O </td></tr>
+	<tr><td>03</td><td>CHAVE_NF</td><td>Informar a chave da NFe ou NFCe</td><td>N</td><td>44</td><td>-</td><td>OC </td></tr>
+	<tr><td>04</td><td>CNPJ_DEST</td><td>CNPJ do destinatário da transação</td><td>N</td><td>14</td><td>-</td><td>OC </td></tr>
+	<tr><td>05</td><td>CPF_DEST</td><td>CPF do destinatário da transação</td><td>N</td><td>11</td><td>-</td><td>OC </td></tr>
+	<tr><td>06</td><td>ID_DEST</td><td>Identificação do destinatário sem cadastro de CPF ou CNPJ</td><td>X</td><td>20</td><td>-</td><td>OC </td></tr>
+						</table>
+						<br>
+
+						<p>Observações:
+						<br>Registro exclusivo e obrigatório para instituições que atuam na intermediação de negócios e serviços.
+						<br>Nível hierárquico - 3
+						<br>Ocorrência – 1:1 </p>
+
+						<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1220] </p>
+
+
+						<p><div class="negrito">Campo 02</div> (UF_DEST)
+							<div class="negrito"> Preenchimento</div> : Informar a UF de destino da transação comercial.
+					  </p>
+
+						<p><div class="negrito">Campo 03</div> (CHAVE_NF)
+							<div class="negrito"> Preenchimento</div> : Quando o intermediador tiver acesso às
+informações da NFe ou NFCe, preencher neste campo com a chave de acesso do
+documento eletrônico.
+							<div class="negrito"> Validação</div> : é conferido se o dígito verificador (DV) da chave é
+válido. Conforme o Manual de Orientações do Contribuinte v 6.00, página 143.
+					  </p>
+
+						<p><div class="negrito">Campo 04</div> (CNPJ_DEST)
+							<div class="negrito"> Preenchimento</div> : Informar o CNPJ do comprador ou
+contratante dos serviços intermediados.
+							<div class="negrito"> Validação</div> : serão conferidos os dígitos de
+verificação (DV) do CNPJ informado. Se CNPJ ficar em branco obrigatório o
+preenchimento do CPF_DEST ou ID_DEST. Se CNPJ for preenchido o preenchimento dos
+outros campos é vedado.
+					  </p>
+
+						<p><div class="negrito">Campo 05</div> (CPF_DEST)
+							<div class="negrito"> Preenchimento</div> : : Informar o CPF do comprador ou contratante
+dos serviços intermediados.
+							<div class="negrito"> Validação</div> : serão conferidos os dígitos de verificação (DV) do
+CPF informado. Se CPF ficar em branco obrigatório o preenchimento do CNPJ_DEST ou
+ID_DEST. Se CPF for preenchido o preenchimento dos outros campos é vedado.
+					  </p>
+
+						<p><div class="negrito">Campo 06</div> (ID_DEST)
+							<div class="negrito"> Preenchimento</div> : Informar a identificação do comprador ou
+contratante dos serviços intermediados. Preencher este campo apenas nos casos de
+destinatários sem cadastro de CPF ou CNPJ.
+							<div class="negrito"> Validação</div> : Se ID_DEST ficar em branco
+obrigatório o preenchimento do CNPJ_DEST ou CPF_DEST. Se ID_DEST for preenchido o preenchimento dos outros campos é vedado.
+					  </p>
+
+
+
+
+			<h3 id="REGISTRO TIPO 1500: RESUMO MENSAL DAS OPERAÇÕES FINANCEIRAS">REGISTRO TIPO 1500: RESUMO MENSAL DAS OPERAÇÕES FINANCEIRAS</h3>
+
+			<p>Este registro deve ser gerado para informar as transações mensais totalizadas por
+			COD_CLIENTE, por IND_COMEX, por NAT_OPER ou por ID_CONTA. Dessa forma, caso
+			o COD_CLIENTE tenha transações nacionais e internacionais, serão iniciados dois
+			registros 1500 para ele. Caso o COD_CLIENTE tenha transações reportadas em nome de
+			uma Instituição Parceira (Campo 02 do Registro 1100) e também tenha transações que
+			não foram realizadas via Instituição Parceira, deverão ser gerados registros 1500 distintos
+			para cada caso. Para cada NAT_OPER, COD_MCAPT, IND_NAT_JUR e IND_TP_PIX
+			deverá ser gerado um registro 1500 específico. As transações são reportadas
+			considerando a data da captura da transação, sendo reportadas apenas as transações
+			com liquidação confirmada, sendo desconsiderado o float. </p>
+
+     <p>Este registro admite o lançamento de operações extemporâneas apenas em arquivos com
+			a finalidade do tipo 01, no campo 03 do registro 0000. </p>
+
+			<p><span style="text-decoration:underline">Não deverão ser reportadas</span> as transações cujo valor total mensal recebido por pessoa
+			física, seja inferior a R$ 3.375,00 ou menos que 30 transações, ou seja, somente serão
+			reportados recebimentos de pessoa física cujo montante mensal seja igual ou superior a
+			R$ 3.375,00 e tenha 30 ou mais transações. É necessário que sejam atendidos os dois
+			critérios para que as transações sejam reportadas conforme a Unidade da Federação.
+			Caso a pessoa física tenha mais de um Registro 0100, deverão ser consideradas as
+			transações de todos os “COD_CLIENTE” relacionados ao mesmo CPF. </p>
+
+			<p><span style="text-decoration:underline">Também não deverão ser enviadas</span>, independente de serem realizadas de forma intra ou
+			interbancária ou entre contas da mesma instituição de pagamento, as seguintes
+			transações e aquelas cujas finalidades podem ser a elas equiparadas:</p>
+
+<ol><ol type="a">
+	<li>realizadas entre mesma titularidade ou mesmo grupo empresarial com mesma raiz de
+	CNPJ, independente de ser realizado intrabancário, interbancário ou entre contas da
+	mesma instituição de pagamento ou intermediador. Consideram-se transferências de
+	mesma titularidade aquelas que tenham exatamente os mesmos titulares, independente
+	da ordem em cada conta. Quando as transferências ocorrem entre contas de diferentes
+	instituições financeiras, estas poderão identificar a mesma titularidade mediante
+	informação declarada pelo cliente no ato de cada operação;
+	</li><li>de benefícios previdenciários e pensões destinados a pessoa física;
+	</li><li>de natureza salarial destinado a pessoa física;
+	</li><li>de benefícios sociais e provenientes de órgãos públicos destinados a pessoa física ou
+	jurídica;
+	</li><li>originadas de empréstimos e financiamentos;
+	</li><li>com liquidação via SLC/CIP para produtos crédito, débito e antecipações;
+	</li><li>Operações com natureza de câmbio registradas no BACEN.
+	</li><li>destinadas a contas cuja titularidade pertença a instituições financeiras, incluindo as
+	sociedades distribuidoras e corretoras de títulos mobiliários, agências de fomento, as
+	sociedades de seguro, de previdência e de capitalização e os fundos e clubes de
+	investimento, exceto adquirentes, subadquirentes e equiparadas, destinadas a conta-salário;
+	</li><li>destinadas a condomínios;
+	</li><li>destinadas a conta salário;
+	</li><li>relativas a pagamentos de participações de lucros, distribuição de dividendos e juros
+	sobre capital próprio conforme legislação aplicável;
+	</li><li>crédito e restituição de imposto de renda;
+	</li><li>indenizações vinculadas a ordem judicial, apólice de seguro, a título previdenciário
+	ou trabalhista;
+	</li><li>resgate, pagamento de juros, amortização e outras formas de ingresso de recursos
+	decorrentes de aplicações financeiras;
+	</li><li>cashbacks e programas de incentivo creditados pela instituição autora do arquivo;
+	</li><li>doações e patrocínios provenientes de leis de incentivo;
+	</li><li>Créditos de câmbio recebidos em contas correntes de PF e PJ, que não estejam
+	relacionados a uma operação de venda ou serviço internacional;
+	</li><li>Créditos oriundos de estornos;
+	</li><li>Depósitos em cheque ou em dinheiro. </li>
+
+</ol></ol>
+
+<p>Em caso de dúvida quanto ao enquadramento da transação ou quanto ao remetente do
+recurso, a transação deverá ser enviada. Os arquivos com finalidade 3 podem conter
+informações de contas referenciadas nos itens “h” e “i” do rol exaustivo citado na descrição
+deste registro, sendo excluídas as transações entre mesma titularidade. </p>
+
+<p><div class="negrito">Validação do Registro</div>: não podem ser informados dois ou mais registros com a mesma
+combinação de valores dos campos COD_IP_PAR + COD_CLIENTE + IND_COMEX +
+IND_EXTEMP + PERIODO + COD_MCAPT + NAT_OPER+ IND_NAT_JUR +
+IND_TP_PIX. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo “1500”</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+<tr><td>02</td><td>COD_IP_PAR</td><td>Código de identificação da Instituição Parceira - (campo 02 do Registro 0300).</td><td>X</td><td>-</td><td>-</td><td>OC</td></tr>
+<tr><td>03</td><td>COD_CLIENTE</td><td>Código de identificação do Cliente (campo 02 do Registro 0100)</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+<tr><td>04</td><td>IND_COMEX</td><td>Indicador de transação de pagamento ao exterior que não se enquadrem no item “g” da descrição do registro 1500 <br>0 – Não <br>1 – Sim</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+<tr><td>05</td><td>IND_EXTEMP</td><td>Indicador de informação extemporânea: <br> 0 – Não <br> 1 – Sim</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+<tr><td>06</td><td>PERIODO</td><td>Período a que se referem as transações consolidadas (AAAAMM)</td><td>N</td><td>6</td><td>-</td><td>O </td></tr>
+<tr><td>07</td><td>VALOR</td><td>Valor total das operações</td><td>N</td><td>18</td><td>2</td><td>O </td></tr>
+<tr><td>08</td><td>QTD</td><td>Quantidade de operações</td><td>N</td><td>10</td><td>-</td><td>O </td></tr>
+<tr><td>09</td><td>COD_MCAPT</td><td>Identificação do Código informado no campo 02 do Registro 0200.</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+<tr><td>10</td><td>NAT_OPER</td><td>Natureza da operação <br>3 – Boleto de transações próprias <br>4 – Transferência de Recursos <br>6 – PIX <br>8 – Saque ou troco em estabelecimento comercial ou operações de PIX Saque ou Pix Troco.</td><td>N</td><td>1</td><td>-</td><td>O </td></tr>
+<tr><td>11</td><td>IND_NAT_JUR</td><td>Natureza Jurídica da Origem da Operação:<br> 0 – CPF (PF) <br>1 – CNPJ (PJ</td><td>N</td><td>1</td><td>-</td><td>OC</td></tr>
+<tr><td>12</td><td>IND_TP_PIX</td><td>Indicador de tipo de PIX: <br>0 – Dinâmico <br>1 – Estático</td><td>N</td><td>1</td><td>-</td><td>OC</td></tr>
+						</table>
+						<br>
+						<p>Observações:
+						<br>Nível hierárquico - 2
+						<br>Ocorrência - 1:N </p>
+
+						<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1500] </p>
+
+
+						<p><div class="negrito">Campo 02</div> (COD_IP_PAR)
+								<div class="negrito"> Preenchimento</div> : Código de identificação da Instituição Parceira (aquela que compartilha as informações com o remetente do arquivo para que
+este envie as informações em seu nome). Preencher este campo apenas se o remetente
+do arquivo tiver acesso à identificação do beneficiário do recurso.
+								<div class="negrito"> Validação</div> : Não aceitar
+COD_IP_PAR igual ao COD_CLIENTE nesse registro.
+						</p>
+
+						<p><div class="negrito">Campo 03</div> (COD_CLIENTE)
+								<div class="negrito"> Validação</div> :  o código informado no campo COD_CLIENTE
+deve ser o mesmo informado no campo 02 do Registro 0100.
+
+						</p>
+
+						<p><div class="negrito">Campo 04</div> (IND_COMEX)
+								<div class="negrito"> Preenchimento</div> : informar se a transação se refere a
+pagamento ao exterior, em transações cross border. Não devem ser informadas as
+transações que se enquadrem no item “g” da descrição do registro 1500.
+								<div class="negrito"> Valores Válidos</div> : [0,1]
+						</p>
+
+						<p><div class="negrito">Campo 05</div> (IND_EXTEMP)
+								<div class="negrito"> Preenchimento</div> : informar se a transação se refere a
+operação extemporânea. Para arquivos de retificação, finalidade 02 do campo 03 no
+registro 0000, não serão aceitos registros extemporâneos. As transações de boletos
+liquidados em períodos posteriores à data da sua emissão devem ser consolidadas
+conforme o período da data da emissão do boleto. Boletos não liquidados não devem ser
+reportados.
+								<div class="negrito"> Valores Válidos</div> : [0,1]
+								<div class="negrito"> Validação</div> : Para “Retificação do arquivo”, o
+IND_EXTEMP deve ser igual a zero.
+						</p>
+
+						<p><div class="negrito">Campo 06</div> (PERIODO)
+								<div class="negrito"> Preenchimento</div> : Informar o período a que se referem as
+transações consolidadas (AAAAMM). As transações devem ser reportadas conforme a
+liquidação da operação. Caso a liquidação da transação seja feita de forma parcelada mas
+com garantia de liquidação, deverá ser reportado o valor total no momento da captura.
+						</p>
+
+						<p><div class="negrito">Campo 07</div> (VALOR)
+								<div class="negrito"> Preenchimento</div> :informar o valor total mensal das operações
+realizadas no período.
+						</p>
+
+						<p><div class="negrito">Campo 08</div> (QTD)
+								<div class="negrito"> Preenchimento</div> : informar a quantidade total mensal das operações
+realizadas no período.
+						</p>
+
+						<p><div class="negrito">Campo 09</div> (COD_MCAPT)
+								<div class="negrito"> Preenchimento</div> : informar o código de identificação do Meio
+de Captura.
+								<div class="negrito"> Validação</div> :mesmo do campo 02 do Registro 0200.
+						</p>
+
+						<p><div class="negrito">Campo 10</div> (NAT_OPER)
+								<div class="negrito"> Preenchimento</div> : informar a natureza da operação realizada
+que está sendo reportada. Caso o beneficiário do recurso receba mais de um tipo de
+natureza de operação, deverão ser criados quantos registros 1500 forem necessários para
+reportar cada natureza em seu consolidador específico. Para a natureza “3” devem ser
+informados apenas os documentos cuja emissão e liquidação com o beneficiário do
+pagamento tenha sido feita pelo autor do arquivo. Boletos e Guias não pagos, não devem
+ser reportados. Se a emissão do boleto ou guia ocorreu em período anterior, deve ser
+gerado registro extemporâneo utilizando a data da emissão ou data de referência do
+documento. Se o boleto/guia/convênio for pago via PIX, a transação deve ser reportada
+como PIX e marcada como PIX dinâmico. Para transações com criptomoedas, moedas
+virtuais, cashbacks e via aplicativos de mensagem, utilizar natureza "4"
+								<div class="negrito"> Valores Válidos</div> : [3,4,6,8]
+						</p>
+
+						<p><div class="negrito">Campo 11</div> (IND_NAT_JUR)
+								<div class="negrito"> Preenchimento</div> :  informar se a transação de pagamento foi
+realizada por pessoa física (CPF) ou pessoa jurídica (CNPJ). Obrigatório ser preenchido
+para as naturezas 4 e 6 constantes no campo 10 do Registro 1500.
+						</p>
+
+						<p><div class="negrito">Campo 12</div> (IND_TP_PIX)
+								<div class="negrito"> Preenchimento</div> : informar se a transação de pagamento foi
+realizada QR Dinâmico ou Estático. Obrigatório ser preenchido para as naturezas 6
+constantes no campo 10 do Registro 1500.
+						</p>
+
+			<h3 id="REGISTRO TIPO 1600: CANCELAMENTO EXTEMPORÂNEO CONSOLIDADO">REGISTRO TIPO 1600: CANCELAMENTO EXTEMPORÂNEO CONSOLIDADO</h3>
+
+			<p>Este registro deve ser gerado para informar o somatório das operações canceladas em
+			períodos anteriores a esta declaração, agrupadas por natureza de operação e período.
+			Caso exista mais de uma natureza de operação cancelada para o período, deverão ser
+			gerados quantos registros 1600 forem necessários para segregar todas as naturezas para
+			o respectivo período. Caso uma transação tenha sido cancelada/estornada no mesmo
+			período (mês) em que foi realizada, não deverá ser enviada. Registros de cancelamento
+			são aceitos apenas em arquivos com finalidade 01 – Normal no campo 03 do registro 0000. </p>
+			<p>Utiliza-se o registro 1600 apenas para cancelar transações que foram enviadas via registro
+			1500. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr><td>01</td><td>REG</td><td>Texto fixo contendo “1600”</td><td>N</td><td>4</td><td>-</td><td>O </td></tr>
+	<tr><td>02</td><td>COD_IP_PAR</td><td>Código de identificação da Instituição Parceira - (campo 02 do Registro 0300).</td><td>X</td><td>-</td><td>-</td><td>OC </td></tr>
+	<tr><td>03</td><td>COD_CLIENTE</td><td>Código do cliente (campo 02 do registro 0100)</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+	<tr><td>04</td><td>PERIODO</td><td>Período a que se referem as transações consolidadas (AAAAMM)</td><td>N</td><td>6</td><td>-</td><td>O </td></tr>
+	<tr><td>05</td><td>VL_CANC</td><td>Valor cancelado das operações</td><td>N</td><td>18</td><td>2</td><td>O </td></tr>
+	<tr><td>06</td><td>NAT_OPER</td><td>Natureza da operação <br>3 – Boleto de transações próprias <br>4 – Transferência de Recursos <br>6 – PIX <br>8 – Saque ou troco em estabelecimento comercial ou operações de PIX Saque ou Pix Troco</td><td>N</td><td>1</td><td>-</td><td>O</td></tr>
+	<tr><td>07</td><td>COD_MCAPT</td><td>Identificação do Código informado no campo 02 do Registro 0200.</td><td>X</td><td>-</td><td>-</td><td>O </td></tr>
+						</table>
+						<br>
+
+						<p>Observações:
+						<br>Nível hierárquico – 2
+						<br>Ocorrência – 1:N (1 por cancelamento) </p>
+
+						<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1600] </p>
+
+
+<p><div class="negrito">Campo 02</div> (COD_IP_PAR)
+	<div class="negrito"> Preenchimento</div> : Código de identificação da Instituição
+Parceira (aquela que compartilha as informações com o remetente do arquivo para que
+este envie as informações em seu nome).
+	<div class="negrito"> Validação</div> : Não aceitar COD_IP_PAR igual ao
+COD_CLIENTE nesse registro. Se a transação não for de instituição parceira, deixar em
+branco.
+</p>
+
+<p><div class="negrito">Campo 03</div> (COD_CLIENTE)
+	<div class="negrito"> Validação</div> : o código informado no campo COD_CLIENTE
+deve ser o mesmo informado no campo 02 do Registro 0100.
+</p>
+
+<p><div class="negrito">Campo 04</div> (PERIODO)
+	<div class="negrito"> Preenchimento</div> :  Informar o período a que se referem as os
+cancelamentos/estornos consolidados(AAAAMM). Caso uma transação tenha sido
+cancelada/estornada no mesmo período (mês) em que foi realizada, não deverá ser
+enviada. Os cancelamentos e estornos devem ser reportados conforme a liquidação da
+operação. Caso a liquidação da transação seja feita de forma parcelada mas com garantia
+de liquidação, deverá ser reportado o valor total no momento da captura.
+</p>
+
+<p><div class="negrito">Campo 05</div> (VL_CANC)
+	<div class="negrito"> Preenchimento</div> : informar o valor total mensal das operações
+canceladas/estornadas no período.
+</p>
+
+<p><div class="negrito">Campo 06</div> (NAT_OPER)
+	<div class="negrito"> Preenchimento</div> :  informar a natureza da operação realizada
+que está sendo informada. Caso o beneficiário do recurso receba mais de um tipo de
+natureza de operação, deverão ser criados quantos registros 1500 forem necessários para
+reportar cada natureza em seu consolidador específico.
+	<div class="negrito"> Valores Válidos</div> :  [3, 4, 6, 8]
+</p>
+
+<p><div class="negrito">Campo 07</div> (COD_MCAPT)
+	<div class="negrito"> Preenchimento</div> : informar o código de identificação do Meio
+de Captura.
+	<div class="negrito"> Validação</div> : mesmo do campo 02 do Registro 0200.
+</p>
+
+			<h3 id="REGISTRO TIPO 1990: ENCERRAMENTO DO BLOCO 1">REGISTRO TIPO 1990: ENCERRAMENTO DO BLOCO 1</h3>
+
+<p>Este registro destina-se a identificar o encerramento do bloco 1 e a informar a quantidade
+de linhas existentes no bloco. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "1990"</td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>QTD_LIN</td>
+								<td>Quantidade total de linhas do Bloco 1 </td>
+								<td>N</td>
+								<td>-</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+
+						<p>Observações:
+<br>Registro obrigatório.
+<br>Nível hierárquico - 1
+<br>Ocorrência – um por Arquivo</p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [1990] </p>
+
+
+<p><div class="negrito">Campo 02</div> (QTD_LIN_1)
+	<div class="negrito"> Preenchimento</div> :  a quantidade de linhas a ser informada deve considerar também os próprios registros de abertura e encerramento do bloco.
+	<div class="negrito"> Validação</div> : o número de linhas existentes no bloco 1 é igual ao valor informado no campo QTD_LIN_1.
+</p>
+
+			<h3 id="BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL">BLOCO 9 – CONTROLE E ENCERRAMENTO DO ARQUIVO DIGITAL</h3>
+
+			<p>Este bloco representa os totais de registros e serve como forma de controle para
+batimentos e verificações </p>
+
+			<h3 id="REGISTRO TIPO 9001: ABERTURA DO BLOCO 9">REGISTRO TIPO 9001: ABERTURA DO BLOCO 9</h3>
+
+<p>Este registro deve sempre ser gerado e representa a abertura do bloco 9. </p>
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "9001"</td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>IND_MOV</td>
+								<td>Indicador de movimento:
+<br>0 - Bloco sem dados informados;
+<br>1 - Bloco com dados informados. </td>
+								<td>N</td>
+								<td>1</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+
+					<p>Observações:
+<br>Registro obrigatório Nível hierárquico - 1
+<br>Ocorrência - um (por arquivo) </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [9001] </p>
+<p><div class="negrito">Campo 02</div> (IND_MOV)<div class="negrito"> Valores Válidos</div> : [0,1] </p>
+
+			<h3 id="REGISTRO TIPO 9900: REGISTROS DO ARQUIVO">REGISTRO TIPO 9900: REGISTROS DO ARQUIVO</h3>
+
+<p>Todos os registros referenciados neste arquivo, inclusive os posteriores a este registro, devem ter uma linha totalizadora do seu número de ocorrências. </p>
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "9900"</td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>REG_BLC</td>
+								<td>Registro que será totalizado no próximo campo </td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>03</td>
+								<td>QTD_REG_BLC</td>
+								<td>Total de registros do tipo informado no campo anterior</td>
+								<td>N</td>
+								<td>-</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+						<p>Observações:
+<br>Nível hierárquico – 2
+<br>Ocorrência – vários (por arquivo) </p>
+
+<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [9900] </p>
+<p><div class="negrito">Campo 02</div> (REG_BCL)<div class="negrito"> Preenchimento</div> : informar cada um dos códigos de registros válidos deste arquivo, que será totalizado no próximo campo QTD_REG_BLC. </p>
+<p><div class="negrito">Campo 03</div> (QTD_REG_BCL)<div class="negrito"> Validação</div> : verifica se o número de linhas no arquivo do
+tipo informado no campo REG_BLC do registro 9900 é igual ao valor informado neste campo.  </p>
+
+			<h3 id="REGISTRO TIPO 9990: ENCERRAMENTO DO BLOCO 9">REGISTRO TIPO 9990: ENCERRAMENTO DO BLOCO 9</h3>
+
+<p>Este registro destina-se a identificar o encerramento do bloco 9 e a informar a quantidade
+de linhas existentes no bloco. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "9990" </td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>QTD_LIN_9 </td>
+								<td>Quantidade total de linhas do Bloco 9. </td>
+								<td>N</td>
+								<td>-</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+
+						<p>Observações:
+						<br>Registro obrigatório
+						<br>Nível hierárquico - 1
+						<br>Ocorrência - um (por arquivo) </p>
+
+						<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [9990] </p>
+						<p><div class="negrito">Campo 02</div> (QTD_LIN_9)<div class="negrito"> Preenchimento</div> : a quantidade de linhas a ser informada deve
+considerar também os próprios registros de abertura e encerramento do bloco. Para este
+cálculo, o registro 9999, apesar de não pertencer ao Bloco 9, também deve ser
+contabilizado nesta soma. Validação: o número de linhas existentes no bloco 9 é igual ao valor informado no campo QTD_LIN_9.</p>
+
+
+			<h3 id="REGISTRO TIPO 9999: ENCERRAMENTO DO ARQUIVO DIGITAL">REGISTRO TIPO 9999: ENCERRAMENTO DO ARQUIVO DIGITAL</h3>
+
+<p>Este registro destina-se a identificar o encerramento do arquivo digital e a informar a
+quantidade de linhas existentes no arquivo. </p>
+
+
+						<br>
+						<table class="tabela_registro">
+							<tr>
+								<th>Nº</th>
+								<th>CAMPO</th>
+								<th>CONTEÚDO</th>
+								<th>TIPO</th>
+								<th>TAM</th>
+								<th>DEC</th>
+								<th>OBR</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>REG</td>
+								<td>Texto fixo contendo "9999" </td>
+								<td>N</td>
+								<td>4</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>QTD_LIN</td>
+								<td>Quantidade total de linhas do arquivo digital</td>
+								<td>N</td>
+								<td>-</td>
+								<td>-</td>
+								<td>O</td>
+							</tr>
+						</table>
+						<br>
+
+						<p>Observações:
+						<br>Registro obrigatório
+						<br>Nível hierárquico - 0
+						<br>Ocorrência - um (por arquivo) </p>
+
+						<p><div class="negrito">Campo 01</div> (REG)<div class="negrito"> Valor Válido</div> : [9999] </p>
+						<p><div class="negrito">Campo 02</div> (QTD_LIN)<div class="negrito"> Preenchimento</div> : a quantidade de linhas a ser informada deve
+considerar também o próprio registro 9999. Validação: o número de linhas existentes no
+arquivo inteiro é igual ao valor informado no campo QTD_LIN. </p>
+
+	</div>
+</div>
+</div>
+</body>
+
+
+
+</html>
