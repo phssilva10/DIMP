@@ -199,6 +199,11 @@ ul.circulo {
   font-weight: bold;
 }
 
+.comentario{
+  color:darkblue;
+  display:none;
+}
+
 .corpo {
   overflow: hidden
 }

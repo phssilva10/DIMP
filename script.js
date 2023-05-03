@@ -39,6 +39,37 @@ function meiodatela(id_elemento) {
   console.log("Fui pra lá");
 }
 
+function comentarios_on() {
+var caminho = document.getElementById("imagem_botao").src;
+
+if (caminho.search("botao_on") != -1 ){//isso procura pela palavra botao_on no string, se existir retorna a posicao da palavra, se nao existir retorna -1
+  original = document.getElementById("imagem_botao").src;
+  substituto = original.replace("botao_on", "botao_off");//substitui botao_on por botao_off
+  document.getElementById("imagem_botao").src=substituto;
+  esconder_comentarios();
+
+    } else {
+      original = document.getElementById("imagem_botao").src;
+      substituto = original.replace("botao_off", "botao_on");//substitui botao_off por botao_on
+      document.getElementById("imagem_botao").src = substituto;
+      mostrar_comentarios();
+    }
+}
+
+function esconder_comentarios(){
+  var elements = document.getElementsByClassName("comentario");
+  for (var i = 0, len = elements.length; i < len; i++) {
+       elements[i].style.display = "none";
+  }
+}
+
+function mostrar_comentarios(){
+  var elements = document.getElementsByClassName("comentario");
+  for (var i = 0, len = elements.length; i < len; i++) {
+       elements[i].style.display = "block";
+  }
+
+}
 
 
 function mostra_arvore() {
